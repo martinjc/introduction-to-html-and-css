@@ -1,7 +1,7 @@
 {
-  "name": "online-course-notes-11ty",
+  "name": "introduction-to-html-and-css",
   "version": "1.0.0",
-  "description": "a skeleton project using 11ty to generate course notes",
+  "description": "an introduction to HTML and CSS",
   "main": "index.js",
   "scripts": {
     "reinstall": "rimraf node_modules && npm cache clean && npm install",
@@ -21,18 +21,18 @@
     "serve": "browser-sync start -s --files 'public/**/*.(js|css|html)' --ss 'public' --port 8080 --reload-debounce 500  --no-open",
     "watch": "npm-run-all --parallel watch:*",
     "watch:eleventy": "onchange --await-write-finish 4000 'src/**/*.njk' 'src/**/*.md' 'src/**/*.json'  -- npm run build:eleventy:dev",
-    "watch:css": "onchange --await-write-finish 4000 'src/_sass/**/*.scss' -- npm run build:css:dev && npm run build:eleventy:dev"  
-},
+    "watch:css": "onchange --await-write-finish 4000 'src/_sass/**/*.scss' -- npm run build:css:dev && npm run build:eleventy:dev"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martinjc/online-course-notes-11ty.git"
+    "url": "git+https://github.com/martinjc/introduction-to-html-and-css.git"
   },
   "author": "Martin Chorley",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/martinjc/online-course-notes-11ty/issues"
+    "url": "https://github.com/martinjc/introduction-to-html-and-css/issues"
   },
-  "homepage": "https://github.com/martinjc/online-course-notes-11ty#readme",
+  "homepage": "https://github.com/martinjc/introduction-to-html-and-css#readme",
   "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
