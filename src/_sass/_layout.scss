@@ -1,0 +1,107 @@
+body {
+    margin-bottom: $spacing-unit;
+    margin-left: $gap-size;
+    margin-right: $gap-size;
+    background-color: $background-color;
+}
+
+h1 {
+    margin-top: $spacing-unit;
+}
+
+h1,
+p {
+    margin-bottom: $spacing-unit;
+}
+
+h2 {
+    margin-bottom: $spacing-unit / 2;
+}
+
+h1,
+h2 {
+    margin-left: -$gap-size;
+    padding-top: $spacing-unit/4;
+    padding-bottom: $spacing-unit/8;
+    padding-left: $spacing-unit/8;
+}
+
+ul,
+ol {
+    margin-left: $spacing-unit;
+    margin-bottom: $spacing-unit;
+}
+
+pre {
+    background-color: $grey-color-light;
+    margin-bottom: $spacing-unit / 2;
+    padding: $spacing-unit/4;
+    overflow-x: scroll;
+}
+
+.twitter-tweet {
+    margin: auto;
+}
+
+.youtube-vid {
+    margin: auto;
+}
+
+.content {
+    h1,
+    h2,
+    h3 {
+        background-color: $background-color;
+        margin-bottom: $spacing-unit/4;
+        padding-left: 2px;
+        clip-path: none;
+    }
+
+    p {
+        margin-bottom: $spacing-unit/2;
+    }
+
+    em {
+        font-style: italic;
+    }
+}
+
+.comments {
+    margin-top: $spacing-unit/2;
+}
+
+nav {
+    ol,
+    ul {
+        margin-bottom: 0;
+    }
+
+    margin-bottom: $spacing-unit;
+}
+
+@include media-query($small-break) {
+    body {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@include media-query($medium-break) {
+    body {
+        max-width: $max-content-size;
+    }
+
+    h1,
+    h2,
+    h3 {
+        padding-top: $spacing-unit/4;
+        padding-bottom: $spacing-unit/8;
+        padding-left: $spacing-unit/8;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: $spacing-unit;
+    }
+}

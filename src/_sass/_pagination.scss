@@ -1,0 +1,28 @@
+.pagination {
+    display: block;
+    width: 100%;
+    list-style: none;
+
+    li {
+        display: inline;
+    }
+}
+
+@include media-query($small-break) {
+    .nextprev {
+        .next {
+            width: 48%;
+            float: right;
+            text-align: right;
+        }
+        .previous {
+            width: 48%;
+            float: left;
+        }
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+}

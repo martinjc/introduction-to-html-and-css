@@ -1,0 +1,34 @@
+  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ title or metadata.title }}</title>
+
+    <meta name="description" content="{{ description or metadata.description }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
+    <link rel="icon" type="image/png" href="{{ '/favicon-32x32.png' | url }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ '/favicon-16x16.png' | url }}" sizes="16x16">
+    <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="{{ url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title or metadata.title }}">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="{{ url }}">
+    <meta name="twitter:title" content="{{ title or metadata.title }}">
+
+    <link rel="icon" href="{{ '/favicon.ico' | url }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>

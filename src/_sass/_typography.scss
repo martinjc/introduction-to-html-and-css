@@ -1,0 +1,48 @@
+body {
+    font-family: $head-font-family;
+    line-height: $base-line-height;
+    font-display: swap;
+}
+
+h1,
+h2 {
+    background-color: $grey-color-light;
+    font-family: $head-font-family;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+
+h1 {
+    font-size: $large-font-size;
+    color: $brand-color;
+}
+
+h2 {
+    font-size: $medium-font-size;
+    color: $contrast-color;
+}
+
+h3 {
+    font-size: $medium-font-size;
+    color: $contrast-color;
+}
+
+p {
+    font-size: $small-font-size;
+}
+
+.footnotes {
+    font-size: $very-small-font-size;
+}
+
+.footnote-item {
+    font-size: $very-small-font-size;
+}
+
+strong {
+    font-weight: bold;
+    color: $contrast-color;
+}
+
+small {
+    font-size: $very-small-font-size;
+}

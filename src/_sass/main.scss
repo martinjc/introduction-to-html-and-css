@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Roboto", sans-serif;
+$base-font-size: 20px;
+
+$head-font-family: "Scope One", serif;
+
+$very-small-font-size: $base-font-size * 0.8;
+$small-font-size: $base-font-size * 1;
+$medium-font-size: $base-font-size * 1.5;
+$large-font-size: $base-font-size * 2;
+$base-line-height: 1.7rem;
+
+$spacing-unit: 2.2rem;
+
+$text-color: #111;
+$background-color: #fdfdfd;
+$brand-color: #d3374a;
+$contrast-color: darken($brand-color, 15%);
+
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);
+
+$gap-size: 10px;
+
+$max-content-size: 1000px;
+
+$small-break: 600px;
+$medium-break: 1000px;
+
+@mixin media-query($break) {
+    @media screen and (min-width: $break) {
+        @content;
+    }
+}
+
+@import "reset";
+@import "typography";
+@import "layout";
+@import "pagination";
+@import "questions";

@@ -1,0 +1,49 @@
+---
+layout: base.njk
+---
+<header>
+    <h1> <a href="{{ link }}">
+            {{ title }}
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href='{{ "/" | url }}'>Home</a>
+        <ul>
+            {%- for note in collections.notes | sortByPageOrder -%}
+                <li><a href="{{ note.url | url }}">{{ note.data.title }}</a></li>
+            {%- endfor -%}
+        </ul>
+        <a href="{{ '/about/' | url }}">About</a>
+    </nav>
+
+    <div class="content">
+        {{ content | safe }}
+        <div class="nextprev">
+        {%- set nextPost = collections.notes | sortByPageOrder | getNextCollectionItem(page) %}
+        {%- if nextPost %}<p class="next">Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></p>{% endif %}
+        {%- set previousPost = collections.notes | sortByPageOrder | getPreviousCollectionItem(page) %}
+        {%- if previousPost %}<p class="previous">Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></p>{% endif %}
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="{% reponame pkg.repository.url %}"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
