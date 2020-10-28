@@ -16,8 +16,9 @@ module.exports = function(eleventyConfig) {
     // are we building for production or development?
     const isProduction = process.env.NODE_ENV === `production`;
 
-    // copy our root files
+    // copy our root files and images
     eleventyConfig.addPassthroughCopy({"src/_root/*.*": "./"});
+    eleventyConfig.addPassthroughCopy("src/img");
     
     // who doesn't want this to be true at this point?
     eleventyConfig.setDataDeepMerge(true);
@@ -48,6 +49,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode("questions", shortcodes.insertQuestions);
     eleventyConfig.addShortcode("panopto", shortcodes.insertPanopto);
     eleventyConfig.addShortcode("reponame", shortcodes.getRepoName);
+    eleventyConfig.addPairedShortcode("panel", shortcodes.insertPanel);
+
 
     return {
       pathPrefix: isProduction ? PRODUCTION_DIR : '/',

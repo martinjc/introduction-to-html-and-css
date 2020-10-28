@@ -64,6 +64,30 @@ pre {
     em {
         font-style: italic;
     }
+
+    img, pre {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    pre {
+        overflow: scroll;
+    }
+
+    .panel {
+        width: 95%;
+        margin: auto;
+        background-color: #ffc107;
+        border-radius: 5px;
+        margin-bottom: $spacing-unit;
+        padding: $spacing-unit/4;
+
+        .panel-header {
+            font-size: $large-font-size;
+            padding-top: $spacing-unit/2;
+            padding-bottom: $spacing-unit/2;
+        }
+    }
 }
 
 .comments {

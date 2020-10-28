@@ -1,3 +1,5 @@
+const markdownIt = require("markdown-it");
+
 module.exports = {
     // Embedding questions from data files into the notes page template
     insertQuestions: (questions) => {
@@ -31,6 +33,18 @@ module.exports = {
     // return the repository name and domain for use in utterace.es comments
     getRepoName: (url) => {
         return url.replace('git+https://github.com/', '').replace('.git', '');
+    },
+
+    insertPanel: (content, type, header) => {
+        let md = new markdownIt();
+        content = md.renderInline(content);
+        let template = ``;
+        template += `
+<div class="panel panel-${type}">
+<div class="panel-header">${header}</div>
+<div class="panel-body">${content}</div>
+</div>`
+        return template;
     }
 
 }
