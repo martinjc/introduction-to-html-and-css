@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cascading Style Sheets (CSS)</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/online-course-notes-11ty/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/online-course-notes-11ty/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/online-course-notes-11ty/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/online-course-notes-11ty/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cascading Style Sheets (CSS)">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Cascading Style Sheets (CSS)">
+
+    <link rel="icon" href="/online-course-notes-11ty/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/online-course-notes-11ty/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Cascading Style Sheets (CSS)
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href='/online-course-notes-11ty/'>Home</a>
+        <ul><li><a href="/online-course-notes-11ty/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/online-course-notes-11ty/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/online-course-notes-11ty/notes/writing-a-web-page/">Writing a Web Page</a></li></ul>
+        <a href="/online-course-notes-11ty/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <p>CSS is the language used to format and style HTML documents, it is the language we use to tell a web browser how our elements should be displayed. With it, we can control the visible properties of HTML elements such as their size, position, colour and so on. We can also control how the elements behave in relation to other browser elements, or when conditions in the web browser change.</p>
+<p>CSS stands for Cascading Style Sheets. A style sheet, or a collection of CSS used to style a document is made up of a set of CSS rules. Each rule comprises a selector and a set of CSS declarations, held inside a declaration block. Each CSS declaration consists of a CSS property, and the value to be used for that property. Taken together, a CSS rule looks like this:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">selector</span> <span class="token punctuation">{</span><br>    <span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">;</span><br>    <span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Selectors allow us to link the declarations in the declaration block to a particular HTML element. There are three basic types of selector, (with some minor extensions) and they can be combined in multiple ways to target specific elements or groupings of elements within an HTML page.</p>
+<h2>HTML element selector</h2>
+<p>This uses the name (or type) of HTML element to target all elements of that type within a page. So, for example, to target all paragraphs in an HTML document and turn the text blue, we could write a rule like so:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span><br>    <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Note the American English spelling of the colour property, which is used to set the foreground colour of an HTML element. Most CSS properties use American English spellings.</p>
+<h2>Class selector</h2>
+<p>This uses the value of an elements class attribute to target all elements with that particular class. It is denoted using a ‘.’. So, for example, to target all the ‘h2’ elements in an HTML document that have a class of ‘red’ and turn their background’s red, we could use a rule like this:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.red</span> <span class="token punctuation">{</span><br>    <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h2>ID selector</h2>
+<p>This uses the value of an elements ID attribute to target the element with that particular ID. It is denoted using a ‘#’. So, for example, to target the element with the ID ‘top-button’ in an HTML document, we could use a rule like so:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">#top-button</span> <span class="token punctuation">{</span><br>    <span class="token property">Vertical-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h2>Combining selectors</h2>
+<p>Selectors can be combined to target specific elements. The simplest combination is to add selectors together one after the other with a space between them. This links back to the nested hierarchy of HTML and the familial relationships, and looks at whether an element has a descendent matching the selectors. So, for example</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">section p</span> <span class="token punctuation">{</span> … <span class="token punctuation">}</span></code></pre>
+<p>looks for all paragraphs who have a <code>section</code> as an ancestor, or to look at it another way, all paragraphs who are descendants of a <code>section</code>.</p>
+
+        <div class="nextprev"><p class="next">Next: <a href="/online-course-notes-11ty/notes/html/">Hypertext Markup Language (HTML)</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/introduction-to-html-and-css"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    
+  </body>
+</html>

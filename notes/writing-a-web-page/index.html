@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Writing a Web Page</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/online-course-notes-11ty/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/online-course-notes-11ty/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/online-course-notes-11ty/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/online-course-notes-11ty/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Writing a Web Page">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Writing a Web Page">
+
+    <link rel="icon" href="/online-course-notes-11ty/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/online-course-notes-11ty/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Writing a Web Page
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href='/online-course-notes-11ty/'>Home</a>
+        <ul><li><a href="/online-course-notes-11ty/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/online-course-notes-11ty/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/online-course-notes-11ty/notes/writing-a-web-page/">Writing a Web Page</a></li></ul>
+        <a href="/online-course-notes-11ty/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <p>During this activity for this topic we will put what we have learnt into practice by creating a simple HTML web page. We will also practice using version control software to ensure our code is safely versioned and stored.</p>
+<div class="panel panel-danger">
+<div class="panel-header">Note!</div>
+<div class="panel-body">
+This lab assumes that you completed the <a href="http://comsc.pages.cs.cf.ac.uk/introduction-to-git/">Introduction to Git</a> exercise during induction week. If you have not already completed this exercise, please <a href="http://comsc.pages.cs.cf.ac.uk/introduction-to-git/">go and work through that exercise</a> first, before coming back to complete this activity.
+</div>
+</div>
+<p>For this exercise we’ll need a few different applications open. You should search for and open all these applications before we start:</p>
+<ol>
+<li>A text editor</li>
+<li>A command line terminal</li>
+<li>A web browser for viewing the web page we create</li>
+</ol>
+<p>Our first step is not to start writing HTML code, but rather to intialise an empty Git repository to use to version our work. Let’s create a directory for our work and then move into that directory:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token builtin class-name">cd</span> ~<br>$ <span class="token function">mkdir</span> cmt120-labs<br>$ <span class="token builtin class-name">cd</span> cmt120-labs</code></pre>
+<div class="panel panel-danger">
+<div class="panel-header">Note!</div>
+<div class="panel-body">
+Remember, your laptop hard drive is not backed up automatically. Remember to backup important files and documents to OneDrive regularly! Using source control (git) and syncing with a remote repository (such as the University's GitLab server) is another good way to back up your work. We'll see how to do this in just a short while...
+</div>
+</div>
+<p>Then we tell Git to make <code>cmt120-labs</code> a repository:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">git</span> init</code></pre>
+<p>We now have an empty repository that we can store our work in. Later on, we’ll add a remote to the repository so that our work is also backed up on the School GitLab server. For now though, we’ll just work on our local machine.</p>
+<p>Switch to your text editor, and we’ll start writing our first HTML page. Enter the following code:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>My first web page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Hello World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<p>Now save this file as <code>index.html</code>, in a new directory named <code>Week1</code> inside your <code>cmt120-labs</code> directory. Your file and directory structure should look like this:</p>
+<pre><code>cmt120-labs
+  |- Week1
+     |- index.html
+</code></pre>
+<div class="panel panel-primary">
+<div class="panel-header">Question</div>
+<div class="panel-body">
+Why do we use the name <code>index.html</code> for the web page?
+<p>The name <code>index.html</code> is an important name for the default first page in a website. When a client (web browser) makes a request to a web server, but does not actually request a specific page, the web server will usually try to serve any file at that location named <code>index.html</code> by default.</p>
+</div>
+</div>
+<p>We can view our new HTML page in a number of ways. The easiest is to open a new Google Chrome window, then drag the <code>index.html</code> file from a File Explorer window and drop it onto our web browser window. This will open and display the file:</p>
+<p><img src="/online-course-notes-11ty/img/hello-world.png" alt="Our first web page">.</p>
+<h3>Committing our changes</h3>
+<p>We’re pretty impressed with our first web page, so let’s commit it to our git repository. On the command line, type:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> status</code></pre>
+<p>You should see something similar to:</p>
+<pre><code>On branch master
+
+Initial commit
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+	Week1/
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</code></pre>
+<p>We’ll add our <code>index.html</code> file to the staging area, ready to be included in a commit:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> Week1/index.html</code></pre>
+<p>and now, we can again check the status of our repository:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> status</code></pre>
+<pre><code>On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+
+	new file:   Week1/index.html
+</code></pre>
+<p>Let’s make a commit and store a permanent record of this code:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> commit -m <span class="token string">"hello world web page"</span></code></pre>
+<pre><code>[master (root-commit) 8af492c] hello world web page
+ 1 file changed, 8 insertions(+)
+ create mode 100644 Week1/index.html
+</code></pre>
+<div class="panel panel-info">
+<div class="panel-header">Notice!</div>
+<div class="panel-body">
+This is the same process we'll use whenever we want to save a copy of our work - first <code>git add</code> the code to our staging area, then <code>git commit</code> the code to our repository. You should do this from now on whenever you have made a significant change to your work (there will be reminders to do this occasionally!).
+</div>
+</div>
+<h3>Developer Tools</h3>
+<p>An important part of being a web developer is being able to understand how the browser views and processes your page. To help us do this, the browser contains a set of tools that we can use to examine our page and how it is loaded and displayed by the browser. To open the developer tools in Chrome, use the menu, and select ‘More tools’ and then ‘Developer tools’:</p>
+<p><img src="/online-course-notes-11ty/img/developer-tools.png" alt="Opening the Developer Tools"></p>
+<p>The developer window will open within your browser. The different tabs allow you to examine different aspects of the web browser and your page. The ‘Elements’ tab shows you the source code of your web page, as well as the CSS styles that have been applied to the elements of the page. Hovering over an element in the ‘Elements’ tab will highlight the element in the page above, and tell you its size. The right hand side of the developer window will show you the element’s CSS styles, and give a graphic representation of the element’s size in terms of margin, border and padding:</p>
+<p><img src="/online-course-notes-11ty/img/developer-tools-open.png" alt="Developer Tools open"></p>
+<p>We can edit the content of our webpage (temporarily) from within the developer tools. Double click on the <code>h1</code> element, and we can change the text content. If you refresh the page, the original file will be loaded from disk, and your changes will be gone.</p>
+<h3>Running a local web server</h3>
+<p>Opening files by dropping them into our web browser window is all well and good, but usually our HTML files we be served to our web browser by a web server. This is a special piece of software which runs on a machine waiting for requests from web browsers. When it receives a request for a specific file or resource, it attempts to respond to the web browser with the item requested.</p>
+<p>When we are developing a web page we can run a simple local web server that will carry out this request &lt;-&gt; response process and mimic our web page running on a web server somewhere on the Internet.</p>
+<p>If you don’t already have one open, open a command line and navigate to the folder where our lab code is stored:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> cmt112-labs</code></pre>
+<p>We can use a built-in feature of the Python programming language to run a simple web server:</p>
+<pre class="language-bash"><code class="language-bash">python3 -m http.server</code></pre>
+<p>This will start a web server in the current directory, which will sit and wait for requests from a web browser:</p>
+<pre><code>Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+</code></pre>
+<p>If we enter the local IP address for the machine (<code>http://127.0.0.1:8000</code>) in the address bar of the browser, we will see the directory listing for our web server:</p>
+<p><img src="/online-course-notes-11ty/img/local-server-directory.png" alt="Directory listing on server"></p>
+<p>You can see two directories: our <code>Week1</code> directory where our webpage is saved, and the special <code>.git</code> folder created by Git, where the data for our Git repository is stored. If we click on the <code>Week1</code> directory, we will see our <code>index.html</code> page:</p>
+<p><img src="/online-course-notes-11ty/img/local-server-page.png" alt="Web page on local server"></p>
+<div class="panel panel-info">
+<div class="panel-header">Notice!</div>
+<div class="panel-body">
+Now you can see why we named our HTML page <code>index.html</code> - a web server will automatically serve a page named <code>index.html</code> when a request is made for a given directory. By using this name, the index page will automatically be loaded rather than the server displaying a directory listing as it did for the parent directory.
+</div>
+</div>
+<p>If we look at the command line, we can see the output from our web server, listing the requests made to the web server:</p>
+<pre><code>Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+127.0.0.1 - - [17/Sep/2018 21:01:15] &quot;GET / HTTP/1.1&quot; 200 -
+127.0.0.1 - - [17/Sep/2018 21:01:15] &quot;GET /favicon.ico HTTP/1.1&quot; 404 -
+127.0.0.1 - - [17/Sep/2018 21:03:20] &quot;GET /Week1/ HTTP/1.1&quot; 200 -
+</code></pre>
+<p>The first request was for ‘/’, the root directory where the server is running. We can see the code <code>200</code> here, indicating this request was successful. (We’ll look at response codes in more depth later). This was followed by a request for <code>/favicon.ico</code>. This is the browser requesting an icon to display representing the web page. We haven’t provided one, so this request has a <code>404</code> response - which means the requested resource has not been found. The final request is asking for the <code>Week1</code> directory, which succeeds as the browser is able to respond with the <code>index.html</code> page.</p>
+<div class="panel panel-info">
+<div class="panel-header">Notice!</div>
+<div class="panel-body">
+From now on, we'll use a local web browser to serve our web pages while we're developing them. Remember to use <code>python -m http.server</code> to start a web server in your root directory whenever you start working on your code.
+</div>
+</div>
+<h3>Experimenting with HTML</h3>
+<p>This is all you need to start developing web pages, so let’s add some more content to our page. We’ll start by adding a bit of text:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>My first web page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Hello World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>This is my awesome web page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<p>Which means our page will now look like:</p>
+<p><img src="/online-course-notes-11ty/img/page-content.png" alt="Web page content"></p>
+<p>We like the change we’ve made to the page, so let’s commit these changes:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> Week1/index.html<br><span class="token function">git</span> commit -m <span class="token string">"added a paragraph"</span></code></pre>
+<h3>Adding CSS</h3>
+<p>Once we’ve got some HTML content, we can start to style it using CSS.</p>
+<p>We can add CSS to our HTML files by including it in a separate file. Create a new file in your text editor, and write a CSS rule that will apply to all paragraph elements:</p>
+<p><img src="/online-course-notes-11ty/img/css-file.png" alt="CSS file"></p>
+<p>Before we can link the CSS to our HTML, we need to save the file. Here I have saved it as <code>style.css</code> in a subfolder named <code>css</code> within the same directory as<br>
+the <code>index.html</code> file.</p>
+<pre><code>cmt112-labs/
+  |- Week1/
+    |- index.html
+      |- css/
+        |- style.css
+</code></pre>
+<p>We can then link this CSS to our HTML file using a link element in the head of our HTML:</p>
+<p><img src="/online-course-notes-11ty/img/css-link.png" alt="Link CSS file to HTML"></p>
+<p>If we refresh the page in our browser, we’ll see the CSS rules applied to our paragraph elements:</p>
+<p><img src="/online-course-notes-11ty/img/hello-world-css.png" alt="HTML and CSS"></p>
+<h3>Going Further</h3>
+<p>Now it is your turn to start writing HTML. Experiment with adding more content, using some of the HTML tags we have already seen in this week’s reading and videos. Try and add the following types of content to your page:</p>
+<ul>
+<li>a link to another webpage</li>
+<li>an image</li>
+<li>a bulleted list</li>
+<li>a range of headings</li>
+<li>several paragraphs of text</li>
+<li>a link from one part of your page to another</li>
+</ul>
+<p>Use CSS rules to change the formatting of your content.</p>
+<div class="panel panel-info">
+<div class="panel-header">Notice!</div>
+<div class="panel-body">
+Remember to commit your changes frequently, and definitely commit your final code at the end of the lab!
+</div>
+</div>
+<h3>Peer Review</h3>
+<p>Once you have written a page that you are happy with (or about half an hour before the end of the session, whichever comes first!) it is time to show it to someone else and get their feedback!</p>
+<p>You will have been given a ‘peer review’ sheet to help with this activity. Fill out your details in the top boxes, then find someone else in the lab to pair up with. You should swap sheets with this person, and then show them the webpage you have created. They will look at your website and provide you with some feedback on it. While they are doing this, you should examine their website and answer the questions on the peer review sheet. Look at how the website looks, how it functions, the HTML features they have used. Feel free to look at their HTML and CSS code as well. Try to provide useful feedback that will help the other person improve their coding and design skills.</p>
+<p>Once you have filled out the front of the peer-review sheet, hand it back to the creator of the website you reviewed. When they have finished reviewing your website they will return your sheet. You should read their feedback, think about it, and then answer the questions on the reverse of the sheet.</p>
+<p>Once you have completed the peer review activity, hand your sheets back to either Martin or Daniela</p>
+<h3>… Just one more thing</h3>
+<div class="panel panel-danger">
+<div class="panel-header">... Just one more thing!</div>
+<div class="panel-body">
+Before you finish for the day, take a screenshot (or some screenshots) of your website and email them to ChorleyMJ@cardiff.ac.uk.
+If you're not sure how to take a screenshot, why not post a question (or look for an answer) on the <a href="https://stackoverflow.com/c/comsc">School StackOverflow</a> site?
+</div>
+</div>
+        <div class="nextprev"><p class="previous">Previous: <a href="/online-course-notes-11ty/notes/html/">Hypertext Markup Language (HTML)</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/introduction-to-html-and-css"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    
+  </body>
+</html>
