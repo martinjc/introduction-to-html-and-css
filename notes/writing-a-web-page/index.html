@@ -46,7 +46,7 @@
 <div class="container">
     <nav class="sidebar">
         <a href='/introduction-to-html-and-css/'>Home</a>
-        <ul><li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Writing a Web Page</a></li></ul>
+        <ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Writing a Web Page</a></li></ul>
         <a href="/introduction-to-html-and-css/about/">About</a>
     </nav>
 
@@ -55,7 +55,7 @@
 <div class="panel panel-danger">
 <div class="panel-header">Note!</div>
 <div class="panel-body">
-This lab assumes that you completed the <a href="http://comsc.pages.cs.cf.ac.uk/introduction-to-git/">Introduction to Git</a> exercise during induction week. If you have not already completed this exercise, please <a href="http://comsc.pages.cs.cf.ac.uk/introduction-to-git/">go and work through that exercise</a> first, before coming back to complete this activity.
+This lab assumes that you completed the <a href="http://comsc.gitpages.cardiff.ac.uk/introduction-to-git">Introduction to Git</a> exercise during induction week or the Computational Thinking module. If you have not already completed this exercise, please <a href="http://comsc.pages.cs.cf.ac.uk/introduction-to-git/">go and work through that exercise</a> first, before coming back to complete this activity. Please note - you will need to be connected to the VPN to read that course and to complete this exercise.
 </div>
 </div>
 <p>For this exercise we’ll need a few different applications open. You should search for and open all these applications before we start:</p>
@@ -141,7 +141,7 @@ This is the same process we'll use whenever we want to save a copy of our work -
 <p>Opening files by dropping them into our web browser window is all well and good, but usually our HTML files we be served to our web browser by a web server. This is a special piece of software which runs on a machine waiting for requests from web browsers. When it receives a request for a specific file or resource, it attempts to respond to the web browser with the item requested.</p>
 <p>When we are developing a web page we can run a simple local web server that will carry out this request &lt;-&gt; response process and mimic our web page running on a web server somewhere on the Internet.</p>
 <p>If you don’t already have one open, open a command line and navigate to the folder where our lab code is stored:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> cmt112-labs</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> cmt120-labs</code></pre>
 <p>We can use a built-in feature of the Python programming language to run a simple web server:</p>
 <pre class="language-bash"><code class="language-bash">python3 -m http.server</code></pre>
 <p>This will start a web server in the current directory, which will sit and wait for requests from a web browser:</p>
@@ -183,7 +183,7 @@ From now on, we'll use a local web browser to serve our web pages while we're de
 <p><img src="/introduction-to-html-and-css/img/css-file.png" alt="CSS file"></p>
 <p>Before we can link the CSS to our HTML, we need to save the file. Here I have saved it as <code>style.css</code> in a subfolder named <code>css</code> within the same directory as<br>
 the <code>index.html</code> file.</p>
-<pre><code>cmt112-labs/
+<pre><code>cmt120-labs/
   |- Week1/
     |- index.html
       |- css/
@@ -210,11 +210,6 @@ the <code>index.html</code> file.</p>
 Remember to commit your changes frequently, and definitely commit your final code at the end of the lab!
 </div>
 </div>
-<h3>Peer Review</h3>
-<p>Once you have written a page that you are happy with (or about half an hour before the end of the session, whichever comes first!) it is time to show it to someone else and get their feedback!</p>
-<p>You will have been given a ‘peer review’ sheet to help with this activity. Fill out your details in the top boxes, then find someone else in the lab to pair up with. You should swap sheets with this person, and then show them the webpage you have created. They will look at your website and provide you with some feedback on it. While they are doing this, you should examine their website and answer the questions on the peer review sheet. Look at how the website looks, how it functions, the HTML features they have used. Feel free to look at their HTML and CSS code as well. Try to provide useful feedback that will help the other person improve their coding and design skills.</p>
-<p>Once you have filled out the front of the peer-review sheet, hand it back to the creator of the website you reviewed. When they have finished reviewing your website they will return your sheet. You should read their feedback, think about it, and then answer the questions on the reverse of the sheet.</p>
-<p>Once you have completed the peer review activity, hand your sheets back to either Martin or Daniela</p>
 <h3>… Just one more thing</h3>
 <div class="panel panel-danger">
 <div class="panel-header">... Just one more thing!</div>
@@ -223,7 +218,8 @@ Before you finish for the day, take a screenshot (or some screenshots) of your w
 If you're not sure how to take a screenshot, why not post a question (or look for an answer) on the <a href="https://stackoverflow.com/c/comsc">School StackOverflow</a> site?
 </div>
 </div>
-        <div class="nextprev"><p class="previous">Previous: <a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></p>
+
+        <div class="nextprev"><p class="previous">Previous: <a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></p>
         </div>
         <div class="comments">
             <script src="https://utteranc.es/client.js"
