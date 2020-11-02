@@ -1,6 +1,6 @@
 ---
 layout: page
-order: 1
+order: 2
 title: Cascading Style Sheets (CSS)
 ---
 
@@ -17,7 +17,6 @@ selector {
 
 Selectors allow us to link the declarations in the declaration block to a particular HTML element. There are three basic types of selector, (with some minor extensions) and they can be combined in multiple ways to target specific elements or groupings of elements within an HTML page.
 
-
 ## HTML element selector
 
 This uses the name (or type) of HTML element to target all elements of that type within a page. So, for example, to target all paragraphs in an HTML document and turn the text blue, we could write a rule like so:
@@ -27,11 +26,13 @@ p {
     color: blue;
 }
 ```
+
 {{% panel theme="danger" header="Warning!"  %}}
 Note the American English spelling of the colour property, which is used to set the foreground colour of an HTML element. Most CSS properties use American English spellings.
 {{% /panel %}}
 
 ## Class selector
+
 This uses the value of an elements class attribute to target all elements with that particular class. It is denoted using a ‘.’. So, for example, to target all the ‘h2’ elements in an HTML document that have a class of ‘red’ and turn their background’s red, we could use a rule like this:
 
 ```css
@@ -41,11 +42,12 @@ This uses the value of an elements class attribute to target all elements with t
 ```
 
 ## ID selector
+
 This uses the value of an elements ID attribute to target the element with that particular ID. It is denoted using a ‘#’. So, for example, to target the element with the ID ‘top-button’ in an HTML document, we could use a rule like so:
 
 ```css
 #top-button {
-    Vertical-align: center;
+    vertical-align: center;
 }
 ```
 
@@ -58,3 +60,5 @@ section p { … }
 ```
 
 looks for all paragraphs who have a `section` as an ancestor, or to look at it another way, all paragraphs who are descendants of a `section`.
+
+There are lots of ways to combine selectors, 

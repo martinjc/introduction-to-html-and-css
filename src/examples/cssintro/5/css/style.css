@@ -1,0 +1,21 @@
+
+.featured h1 {
+    font-style: italic;
+}
+
+#article1 h1 {
+    color: red;
+}
+
+#article2 h1 {
+    color: green;
+}
+
+#article3 h1 {
+    color: blue;
+}
+
+h1 {
+    text-align: right;
+    color: orange;
+}

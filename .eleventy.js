@@ -19,6 +19,7 @@ module.exports = function(eleventyConfig) {
     // copy our root files and images
     eleventyConfig.addPassthroughCopy({"src/_root/*.*": "./"});
     eleventyConfig.addPassthroughCopy("src/img");
+    eleventyConfig.addPassthroughCopy("src/examples");
     
     // who doesn't want this to be true at this point?
     eleventyConfig.setDataDeepMerge(true);

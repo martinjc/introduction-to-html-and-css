@@ -7,7 +7,7 @@ title: Writing a Web Page
 During this activity for this topic we will put what we have learnt into practice by creating a simple HTML web page. We will also practice using version control software to ensure our code is safely versioned and stored.
 
 {% panel "danger", "Note!" %}
-This lab assumes that you completed the [Introduction to Git](http://comsc.pages.cs.cf.ac.uk/introduction-to-git/) exercise during induction week. If you have not already completed this exercise, please [go and work through that exercise](http://comsc.pages.cs.cf.ac.uk/introduction-to-git/) first, before coming back to complete this activity.
+This lab assumes that you completed the [Introduction to Git](http://comsc.gitpages.cardiff.ac.uk/introduction-to-git) exercise during induction week or the Computational Thinking module. If you have not already completed this exercise, please [go and work through that exercise](http://comsc.pages.cs.cf.ac.uk/introduction-to-git/) first, before coming back to complete this activity. Please note - you will need to be connected to the VPN to read that course and to complete this exercise.
 {% endpanel %}
 
 For this exercise we'll need a few different applications open. You should search for and open all these applications before we start:
@@ -151,7 +151,7 @@ When we are developing a web page we can run a simple local web server that will
 If you don't already have one open, open a command line and navigate to the folder where our lab code is stored:
 
 ```bash
-cd cmt112-labs
+cd cmt120-labs
 ```
 
 We can use a built-in feature of the Python programming language to run a simple web server:
@@ -220,7 +220,6 @@ git add Week1/index.html
 git commit -m "added a paragraph"
 ```
 
-
 ### Adding CSS
 
 Once we've got some HTML content, we can start to style it using CSS.
@@ -233,7 +232,7 @@ Before we can link the CSS to our HTML, we need to save the file. Here I have sa
 the `index.html` file.
 
 ```
-cmt112-labs/
+cmt120-labs/
   |- Week1/
     |- index.html
       |- css/
@@ -264,16 +263,6 @@ Use CSS rules to change the formatting of your content.
 {% panel "info", "Notice!" %}
 Remember to commit your changes frequently, and definitely commit your final code at the end of the lab!
 {% endpanel %}
-
-### Peer Review
-
-Once you have written a page that you are happy with (or about half an hour before the end of the session, whichever comes first!) it is time to show it to someone else and get their feedback!
-
-You will have been given a 'peer review' sheet to help with this activity. Fill out your details in the top boxes, then find someone else in the lab to pair up with. You should swap sheets with this person, and then show them the webpage you have created. They will look at your website and provide you with some feedback on it. While they are doing this, you should examine their website and answer the questions on the peer review sheet. Look at how the website looks, how it functions, the HTML features they have used. Feel free to look at their HTML and CSS code as well. Try to provide useful feedback that will help the other person improve their coding and design skills.
-
-Once you have filled out the front of the peer-review sheet, hand it back to the creator of the website you reviewed. When they have finished reviewing your website they will return your sheet. You should read their feedback, think about it, and then answer the questions on the reverse of the sheet.
-
-Once you have completed the peer review activity, hand your sheets back to either Martin or Daniela
 
 ### ... Just one more thing
 
