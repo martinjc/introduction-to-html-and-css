@@ -10,10 +10,10 @@
 
     <meta name="description" content="">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/online-course-notes-11ty/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/online-course-notes-11ty/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/online-course-notes-11ty/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/online-course-notes-11ty/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/introduction-to-html-and-css/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/introduction-to-html-and-css/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/introduction-to-html-and-css/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/introduction-to-html-and-css/site.webmanifest">
     <meta name="theme-color" content="#d3374a">
 
     <meta property="og:url" content="">
@@ -28,9 +28,9 @@
     <meta name="twitter:url" content="">
     <meta name="twitter:title" content="Writing a Web Page">
 
-    <link rel="icon" href="/online-course-notes-11ty/favicon.ico">
+    <link rel="icon" href="/introduction-to-html-and-css/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/online-course-notes-11ty/css/main.css">
+    <link rel="stylesheet" href="/introduction-to-html-and-css/css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
@@ -45,9 +45,9 @@
 
 <div class="container">
     <nav class="sidebar">
-        <a href='/online-course-notes-11ty/'>Home</a>
-        <ul><li><a href="/online-course-notes-11ty/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/online-course-notes-11ty/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/online-course-notes-11ty/notes/writing-a-web-page/">Writing a Web Page</a></li></ul>
-        <a href="/online-course-notes-11ty/about/">About</a>
+        <a href='/introduction-to-html-and-css/'>Home</a>
+        <ul><li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Writing a Web Page</a></li></ul>
+        <a href="/introduction-to-html-and-css/about/">About</a>
     </nav>
 
     <div class="content">
@@ -90,7 +90,7 @@ Why do we use the name <code>index.html</code> for the web page?
 </div>
 </div>
 <p>We can view our new HTML page in a number of ways. The easiest is to open a new Google Chrome window, then drag the <code>index.html</code> file from a File Explorer window and drop it onto our web browser window. This will open and display the file:</p>
-<p><img src="/online-course-notes-11ty/img/hello-world.png" alt="Our first web page">.</p>
+<p><img src="/introduction-to-html-and-css/img/hello-world.png" alt="Our first web page">.</p>
 <h3>Committing our changes</h3>
 <p>We’re pretty impressed with our first web page, so let’s commit it to our git repository. On the command line, type:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">git</span> status</code></pre>
@@ -133,9 +133,9 @@ This is the same process we'll use whenever we want to save a copy of our work -
 </div>
 <h3>Developer Tools</h3>
 <p>An important part of being a web developer is being able to understand how the browser views and processes your page. To help us do this, the browser contains a set of tools that we can use to examine our page and how it is loaded and displayed by the browser. To open the developer tools in Chrome, use the menu, and select ‘More tools’ and then ‘Developer tools’:</p>
-<p><img src="/online-course-notes-11ty/img/developer-tools.png" alt="Opening the Developer Tools"></p>
+<p><img src="/introduction-to-html-and-css/img/developer-tools.png" alt="Opening the Developer Tools"></p>
 <p>The developer window will open within your browser. The different tabs allow you to examine different aspects of the web browser and your page. The ‘Elements’ tab shows you the source code of your web page, as well as the CSS styles that have been applied to the elements of the page. Hovering over an element in the ‘Elements’ tab will highlight the element in the page above, and tell you its size. The right hand side of the developer window will show you the element’s CSS styles, and give a graphic representation of the element’s size in terms of margin, border and padding:</p>
-<p><img src="/online-course-notes-11ty/img/developer-tools-open.png" alt="Developer Tools open"></p>
+<p><img src="/introduction-to-html-and-css/img/developer-tools-open.png" alt="Developer Tools open"></p>
 <p>We can edit the content of our webpage (temporarily) from within the developer tools. Double click on the <code>h1</code> element, and we can change the text content. If you refresh the page, the original file will be loaded from disk, and your changes will be gone.</p>
 <h3>Running a local web server</h3>
 <p>Opening files by dropping them into our web browser window is all well and good, but usually our HTML files we be served to our web browser by a web server. This is a special piece of software which runs on a machine waiting for requests from web browsers. When it receives a request for a specific file or resource, it attempts to respond to the web browser with the item requested.</p>
@@ -148,9 +148,9 @@ This is the same process we'll use whenever we want to save a copy of our work -
 <pre><code>Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 </code></pre>
 <p>If we enter the local IP address for the machine (<code>http://127.0.0.1:8000</code>) in the address bar of the browser, we will see the directory listing for our web server:</p>
-<p><img src="/online-course-notes-11ty/img/local-server-directory.png" alt="Directory listing on server"></p>
+<p><img src="/introduction-to-html-and-css/img/local-server-directory.png" alt="Directory listing on server"></p>
 <p>You can see two directories: our <code>Week1</code> directory where our webpage is saved, and the special <code>.git</code> folder created by Git, where the data for our Git repository is stored. If we click on the <code>Week1</code> directory, we will see our <code>index.html</code> page:</p>
-<p><img src="/online-course-notes-11ty/img/local-server-page.png" alt="Web page on local server"></p>
+<p><img src="/introduction-to-html-and-css/img/local-server-page.png" alt="Web page on local server"></p>
 <div class="panel panel-info">
 <div class="panel-header">Notice!</div>
 <div class="panel-body">
@@ -174,13 +174,13 @@ From now on, we'll use a local web browser to serve our web pages while we're de
 <p>This is all you need to start developing web pages, so let’s add some more content to our page. We’ll start by adding a bit of text:</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>My first web page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Hello World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>This is my awesome web page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
 <p>Which means our page will now look like:</p>
-<p><img src="/online-course-notes-11ty/img/page-content.png" alt="Web page content"></p>
+<p><img src="/introduction-to-html-and-css/img/page-content.png" alt="Web page content"></p>
 <p>We like the change we’ve made to the page, so let’s commit these changes:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> Week1/index.html<br><span class="token function">git</span> commit -m <span class="token string">"added a paragraph"</span></code></pre>
 <h3>Adding CSS</h3>
 <p>Once we’ve got some HTML content, we can start to style it using CSS.</p>
 <p>We can add CSS to our HTML files by including it in a separate file. Create a new file in your text editor, and write a CSS rule that will apply to all paragraph elements:</p>
-<p><img src="/online-course-notes-11ty/img/css-file.png" alt="CSS file"></p>
+<p><img src="/introduction-to-html-and-css/img/css-file.png" alt="CSS file"></p>
 <p>Before we can link the CSS to our HTML, we need to save the file. Here I have saved it as <code>style.css</code> in a subfolder named <code>css</code> within the same directory as<br>
 the <code>index.html</code> file.</p>
 <pre><code>cmt112-labs/
@@ -190,9 +190,9 @@ the <code>index.html</code> file.</p>
         |- style.css
 </code></pre>
 <p>We can then link this CSS to our HTML file using a link element in the head of our HTML:</p>
-<p><img src="/online-course-notes-11ty/img/css-link.png" alt="Link CSS file to HTML"></p>
+<p><img src="/introduction-to-html-and-css/img/css-link.png" alt="Link CSS file to HTML"></p>
 <p>If we refresh the page in our browser, we’ll see the CSS rules applied to our paragraph elements:</p>
-<p><img src="/online-course-notes-11ty/img/hello-world-css.png" alt="HTML and CSS"></p>
+<p><img src="/introduction-to-html-and-css/img/hello-world-css.png" alt="HTML and CSS"></p>
 <h3>Going Further</h3>
 <p>Now it is your turn to start writing HTML. Experiment with adding more content, using some of the HTML tags we have already seen in this week’s reading and videos. Try and add the following types of content to your page:</p>
 <ul>
@@ -223,7 +223,7 @@ Before you finish for the day, take a screenshot (or some screenshots) of your w
 If you're not sure how to take a screenshot, why not post a question (or look for an answer) on the <a href="https://stackoverflow.com/c/comsc">School StackOverflow</a> site?
 </div>
 </div>
-        <div class="nextprev"><p class="previous">Previous: <a href="/online-course-notes-11ty/notes/html/">Hypertext Markup Language (HTML)</a></p>
+        <div class="nextprev"><p class="previous">Previous: <a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></p>
         </div>
         <div class="comments">
             <script src="https://utteranc.es/client.js"
