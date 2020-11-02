@@ -2,7 +2,7 @@ module.exports = function(eleventyConfig) {
 
     // edit this for any site that isn't hosted on github in a repo called 'online-course-notes-11ty'
     // what a dumb repo name
-    const PRODUCTION_DIR = 'online-course-notes-11ty';
+    const PRODUCTION_DIR = 'introduction-to-html-and-css';
 
     // bunch 'o plugins. They do things
     const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
