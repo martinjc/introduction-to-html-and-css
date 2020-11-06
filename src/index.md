@@ -14,7 +14,7 @@ The Mozilla Developer Network (MDN) has some good introductory articles on HTML 
 
 ## Code examples
 
-There are a set of code examples that accompany this course showing the use of the fundamental HTML tags and CSS styles/rules that we look at.
+There are a set of code examples that accompany this course showing the use of the fundamental HTML tags and CSS styles/rules that we look at. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
 
 -   Hello World [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/hello-world/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/hello-world/)
 -   Headings, Paragraphs and Line BReaks [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/h-p-br/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/h-p-br/)
