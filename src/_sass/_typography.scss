@@ -46,3 +46,8 @@ strong {
 small {
     font-size: $very-small-font-size;
 }
+
+code {
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: $very-small-font-size;
+}
