@@ -6,6 +6,8 @@ title: Cascading Style Sheets (CSS)
 
 CSS is the language used to format and style HTML documents, it is the language we use to tell a web browser how our elements should be displayed. With it, we can control the visible properties of HTML elements such as their size, position, colour and so on. We can also control how the elements behave in relation to other browser elements, or when conditions in the web browser change.
 
+{% panopto "00dfee93-41e7-45e9-ad82-ac69017c171b" %}
+
 CSS stands for Cascading Style Sheets. A style sheet, or a collection of CSS used to style a document is made up of a set of CSS rules. Each rule comprises a selector and a set of CSS declarations, held inside a declaration block. Each CSS declaration consists of a CSS property, and the value to be used for that property. Taken together, a CSS rule looks like this:
 
 ```css
@@ -61,4 +63,4 @@ section p { … }
 
 looks for all paragraphs who have a `section` as an ancestor, or to look at it another way, all paragraphs who are descendants of a `section`.
 
-There are lots of ways to combine selectors, 
+There are lots of ways to combine selectors,
