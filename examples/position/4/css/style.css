@@ -1,0 +1,28 @@
+body {
+    background-color: #ddd;
+}
+
+header {
+    background-color: #aaa;
+}
+
+footer {
+    background-color: #aaa;
+}
+
+.content {
+    display: table;
+}
+
+section {
+    display: table-cell;
+    width: 66%;
+    background-color: #ccc;
+}
+
+aside {
+    display: table-cell;
+    width: 33%;
+    background-color: #888;
+}
+

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Writing a Web Page</title>
+    <title>Week 3 Exercise: Writing a Web Page</title>
 
     <meta name="description" content="">
 
@@ -18,7 +18,7 @@
 
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Writing a Web Page">
+    <meta property="og:title" content="Week 3 Exercise: Writing a Web Page">
     <meta property="og:site_name" content="Introduction to Programming">
     <meta property="og:locale" content="en_GB">
     <meta property="article:author" content="Martin Chorley">
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@martinjc">
     <meta name="twitter:url" content="">
-    <meta name="twitter:title" content="Writing a Web Page">
+    <meta name="twitter:title" content="Week 3 Exercise: Writing a Web Page">
 
     <link rel="icon" href="/introduction-to-html-and-css/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
@@ -39,32 +39,28 @@
 </header>
     <header>
     <h1> <a href="">
-            Writing a Web Page
+            Week 3 Exercise: Writing a Web Page
         </a></h1>
 </header>
 
 <div class="container">
     <nav class="sidebar">
         <a href='/introduction-to-html-and-css/'>Home</a>
-        <ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Writing a Web Page</a></li></ul>
+        <ul><li><a href="/introduction-to-html-and-css/notes/html/">Week 3: Hypertext Markup Language (HTML)</a></li><li><a href="/introduction-to-html-and-css/notes/css/">Week 3: Cascading Style Sheets (CSS)</a></li><li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Week 3 Exercise: Writing a Web Page</a></li><li><a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">Week 4: CSS Selectors and Specificity</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout/">Week 4: CSS Layout</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout-exercise/">Week 4 Exercise: CSS Layout</a></li></ul>
         <a href="/introduction-to-html-and-css/about/">About</a>
     </nav>
 
     <div class="content">
-        <p>During this activity for this topic we will put what we have learnt into practice by creating a simple HTML web page. We will also practice using version control software to ensure our code is safely versioned and stored.</p>
-<div class="panel panel-danger">
-<div class="panel-header">Note!</div>
-<div class="panel-body">
-This lab assumes that you completed the <a href="http://comsc.gitpages.cardiff.ac.uk/introduction-to-git">Introduction to Git</a> exercise during induction week or the Computational Thinking module. If you have not already completed this exercise, please <a href="http://comsc.pages.cs.cf.ac.uk/introduction-to-git/">go and work through that exercise</a> first, before coming back to complete this activity. Please note - you will need to be connected to the VPN to read that course and to complete this exercise.
-</div>
-</div>
+        <iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=2a958b83-e6cd-4ce3-a95c-ac7201594247&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2a958b83-e6cd-4ce3-a95c-ac7201594247" target="blank">link to the full version of the video</a></small></p>
+<p>During this activity for this topic we will put what we have learnt into practice by creating a simple HTML web page.</p>
 <p>For this exercise we’ll need a few different applications open. You should search for and open all these applications before we start:</p>
 <ol>
 <li>A text editor</li>
 <li>A command line terminal</li>
 <li>A web browser for viewing the web page we create</li>
 </ol>
-<p>Our first step is not to start writing HTML code, but rather to intialise an empty Git repository to use to version our work. Let’s create a directory for our work and then move into that directory:</p>
+<p>Let’s create a directory for our work and then move into that directory:</p>
 <pre class="language-bash"><code class="language-bash">$ <span class="token builtin class-name">cd</span> ~<br>$ <span class="token function">mkdir</span> cmt120-labs<br>$ <span class="token builtin class-name">cd</span> cmt120-labs</code></pre>
 <div class="panel panel-danger">
 <div class="panel-header">Note!</div>
@@ -72,9 +68,6 @@ This lab assumes that you completed the <a href="http://comsc.gitpages.cardiff.a
 Remember, your laptop hard drive is not backed up automatically. Remember to backup important files and documents to OneDrive regularly! Using source control (git) and syncing with a remote repository (such as the University's GitLab server) is another good way to back up your work. We'll see how to do this in just a short while...
 </div>
 </div>
-<p>Then we tell Git to make <code>cmt120-labs</code> a repository:</p>
-<pre class="language-bash"><code class="language-bash">$ <span class="token function">git</span> init</code></pre>
-<p>We now have an empty repository that we can store our work in. Later on, we’ll add a remote to the repository so that our work is also backed up on the School GitLab server. For now though, we’ll just work on our local machine.</p>
 <p>Switch to your text editor, and we’ll start writing our first HTML page. Enter the following code:</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>My first web page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Hello World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
 <p>Now save this file as <code>index.html</code>, in a new directory named <code>Week1</code> inside your <code>cmt120-labs</code> directory. Your file and directory structure should look like this:</p>
@@ -91,46 +84,6 @@ Why do we use the name <code>index.html</code> for the web page?
 </div>
 <p>We can view our new HTML page in a number of ways. The easiest is to open a new Google Chrome window, then drag the <code>index.html</code> file from a File Explorer window and drop it onto our web browser window. This will open and display the file:</p>
 <p><img src="/introduction-to-html-and-css/img/hello-world.png" alt="Our first web page">.</p>
-<h3>Committing our changes</h3>
-<p>We’re pretty impressed with our first web page, so let’s commit it to our git repository. On the command line, type:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> status</code></pre>
-<p>You should see something similar to:</p>
-<pre><code>On branch master
-
-Initial commit
-
-Untracked files:
-  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
-
-	Week1/
-
-nothing added to commit but untracked files present (use &quot;git add&quot; to track)
-</code></pre>
-<p>We’ll add our <code>index.html</code> file to the staging area, ready to be included in a commit:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> Week1/index.html</code></pre>
-<p>and now, we can again check the status of our repository:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> status</code></pre>
-<pre><code>On branch master
-
-Initial commit
-
-Changes to be committed:
-  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
-
-	new file:   Week1/index.html
-</code></pre>
-<p>Let’s make a commit and store a permanent record of this code:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> commit -m <span class="token string">"hello world web page"</span></code></pre>
-<pre><code>[master (root-commit) 8af492c] hello world web page
- 1 file changed, 8 insertions(+)
- create mode 100644 Week1/index.html
-</code></pre>
-<div class="panel panel-info">
-<div class="panel-header">Notice!</div>
-<div class="panel-body">
-This is the same process we'll use whenever we want to save a copy of our work - first <code>git add</code> the code to our staging area, then <code>git commit</code> the code to our repository. You should do this from now on whenever you have made a significant change to your work (there will be reminders to do this occasionally!).
-</div>
-</div>
 <h3>Developer Tools</h3>
 <p>An important part of being a web developer is being able to understand how the browser views and processes your page. To help us do this, the browser contains a set of tools that we can use to examine our page and how it is loaded and displayed by the browser. To open the developer tools in Chrome, use the menu, and select ‘More tools’ and then ‘Developer tools’:</p>
 <p><img src="/introduction-to-html-and-css/img/developer-tools.png" alt="Opening the Developer Tools"></p>
@@ -204,12 +157,6 @@ the <code>index.html</code> file.</p>
 <li>a link from one part of your page to another</li>
 </ul>
 <p>Use CSS rules to change the formatting of your content.</p>
-<div class="panel panel-info">
-<div class="panel-header">Notice!</div>
-<div class="panel-body">
-Remember to commit your changes frequently, and definitely commit your final code at the end of the lab!
-</div>
-</div>
 <h3>… Just one more thing</h3>
 <div class="panel panel-danger">
 <div class="panel-header">... Just one more thing!</div>
@@ -219,7 +166,7 @@ If you're not sure how to take a screenshot, why not post a question (or look fo
 </div>
 </div>
 
-        <div class="nextprev"><p class="previous">Previous: <a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></p>
+        <div class="nextprev"><p class="next">Next: <a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">Week 4: CSS Selectors and Specificity</a></p><p class="previous">Previous: <a href="/introduction-to-html-and-css/notes/css/">Week 3: Cascading Style Sheets (CSS)</a></p>
         </div>
         <div class="comments">
             <script src="https://utteranc.es/client.js"

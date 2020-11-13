@@ -1,0 +1,14 @@
+.example {
+    font-style: italic;
+    color: blue;
+}
+
+body {
+    background-color: #eee;
+    color: green;
+}
+
+.example {
+    font-style: normal;
+    color: red;
+}

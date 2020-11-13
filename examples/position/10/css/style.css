@@ -1,0 +1,25 @@
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    float: right;
+}
+
+header {
+    background-color: #aaa;
+}
+
+footer {
+    width: 70%;
+    background-color: #aaa;
+}
+
+section {
+    background-color: #ccc;
+}

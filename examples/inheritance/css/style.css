@@ -1,0 +1,10 @@
+body {
+    background-color: #eee;
+    font-style: italic;
+    color: green;
+}
+
+.ownstyle {
+    font-style: normal;
+    color: blue;
+}

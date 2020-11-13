@@ -1,0 +1,24 @@
+p:first-child {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+a:hover {
+    color:blue;
+}
+
+a {
+    color: red;
+}
+
+p::first-letter {
+    font-size: 24px;
+}
+
+a:before {
+    content: 'This is ODD!';
+    font-size: 36px;
+}

@@ -1,0 +1,28 @@
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    float: right;
+    max-width: 25%;
+}
+
+header {
+    background-color: #aaa;
+}
+
+footer {
+    width: 70%;
+    background-color: #aaa;
+}
+
+section {
+    display: inline-block;
+    width: 45%;
+    background-color: #ccc;
+}
