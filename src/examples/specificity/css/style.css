@@ -1,0 +1,11 @@
+p {
+    color: blue;
+    &:first-child {
+        color: red;
+    }
+}
+
+
+/*p:first-child {
+    color: red;
+}*/

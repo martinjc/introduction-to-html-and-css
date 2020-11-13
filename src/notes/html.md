@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 1
-title: Hypertext Markup Language (HTML)
+title: "Week 3: Hypertext Markup Language (HTML)"
 ---
 
 HTML stands for HyperText Markup Language. In the simplest terms, it’s the language we use to build webpages. It is not really a ‘programming’ language, in that it is not a set of code that instructs the computer to carry out any particular operations. Rather as the name suggests it is a ‘markup’ language, a set of code that adds additional information to data. If we take some content that we’d like to put on the web, anything, from simple pieces of text, graphics and images, lists and tables, all the way through to complex interactive content, HTML is the language we use to explain to our Web browser what that content is. The web browser can look at our HTML, which describes our content, and then understand the structure of our content and how it should be displayed on the screen. This browser process, of taking our content, examining it to come up with a ‘model’ of what the content is, and then displaying it on the screen is known as ‘rendering’.
@@ -183,3 +183,17 @@ Some elements are 'block' elements. These will be displayed starting on a new li
 Other elements are 'inline' elements. These will be displayed on the same line as the content around them, are only as wide as necessary to fit their content, and they can contain other inline elements.
 
 `<div>` is a block level element that adds no meaning to the content it contains other than to group that content together. `<span>` is an inline element that can also be used to group content without adding any additional meaning to that content.
+
+## Code examples
+
+There are a set of code examples that accompany this course showing the use of the fundamental HTML tags and CSS styles/rules that we look at. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
+
+-   Hello World [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/hello-world/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/hello-world/)
+-   Headings, Paragraphs and Line BReaks [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/h-p-br/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/h-p-br/)
+-   Links [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/links/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/links/)
+-   Images [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/images/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/images/)
+-   Centred Image [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/images/centred-image.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/images/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/images/centred-image.html)
+-   Formatting [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/formatting/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/formatting/)
+-   Lists [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/lists/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/lists/)
+-   Grouping [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/grouping/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/grouping/)
+

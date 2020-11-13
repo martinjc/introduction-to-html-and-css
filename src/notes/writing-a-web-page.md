@@ -1,14 +1,12 @@
 ---
 layout: page
 order: 3
-title: Writing a Web Page
+title: "Week 3 Exercise: Writing a Web Page"
 ---
 
-During this activity for this topic we will put what we have learnt into practice by creating a simple HTML web page. We will also practice using version control software to ensure our code is safely versioned and stored.
+{% panopto "2a958b83-e6cd-4ce3-a95c-ac7201594247" %}
 
-{% panel "danger", "Note!" %}
-This lab assumes that you completed the [Introduction to Git](http://comsc.gitpages.cardiff.ac.uk/introduction-to-git) exercise during induction week or the Computational Thinking module. If you have not already completed this exercise, please [go and work through that exercise](http://comsc.pages.cs.cf.ac.uk/introduction-to-git/) first, before coming back to complete this activity. Please note - you will need to be connected to the VPN to read that course and to complete this exercise.
-{% endpanel %}
+During this activity for this topic we will put what we have learnt into practice by creating a simple HTML web page.
 
 For this exercise we'll need a few different applications open. You should search for and open all these applications before we start:
 
@@ -16,7 +14,7 @@ For this exercise we'll need a few different applications open. You should searc
 2. A command line terminal
 3. A web browser for viewing the web page we create
 
-Our first step is not to start writing HTML code, but rather to intialise an empty Git repository to use to version our work. Let's create a directory for our work and then move into that directory:
+Let's create a directory for our work and then move into that directory:
 
 ```bash
 $ cd ~
@@ -27,14 +25,6 @@ $ cd cmt120-labs
 {% panel "danger", "Note!" %}
 Remember, your laptop hard drive is not backed up automatically. Remember to backup important files and documents to OneDrive regularly! Using source control (git) and syncing with a remote repository (such as the University's GitLab server) is another good way to back up your work. We'll see how to do this in just a short while...
 {% endpanel %}
-
-Then we tell Git to make `cmt120-labs` a repository:
-
-```bash
-$ git init
-```
-
-We now have an empty repository that we can store our work in. Later on, we'll add a remote to the repository so that our work is also backed up on the School GitLab server. For now though, we'll just work on our local machine.
 
 Switch to your text editor, and we'll start writing our first HTML page. Enter the following code:
 
@@ -67,68 +57,6 @@ The name `index.html` is an important name for the default first page in a websi
 We can view our new HTML page in a number of ways. The easiest is to open a new Google Chrome window, then drag the `index.html` file from a File Explorer window and drop it onto our web browser window. This will open and display the file:
 
 ![Our first web page]({{ "/img/hello-world.png" | url }}).
-
-### Committing our changes
-
-We're pretty impressed with our first web page, so let's commit it to our git repository. On the command line, type:
-
-```bash
-git status
-```
-
-You should see something similar to:
-
-```
-On branch master
-
-Initial commit
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	Week1/
-
-nothing added to commit but untracked files present (use "git add" to track)
-```
-
-We'll add our `index.html` file to the staging area, ready to be included in a commit:
-
-```bash
-git add Week1/index.html
-```
-
-and now, we can again check the status of our repository:
-
-```bash
-git status
-```
-
-```
-On branch master
-
-Initial commit
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-
-	new file:   Week1/index.html
-```
-
-Let's make a commit and store a permanent record of this code:
-
-```bash
-git commit -m "hello world web page"
-```
-
-```
-[master (root-commit) 8af492c] hello world web page
- 1 file changed, 8 insertions(+)
- create mode 100644 Week1/index.html
-```
-
-{% panel "info", "Notice!" %}
-This is the same process we'll use whenever we want to save a copy of our work - first `git add` the code to our staging area, then `git commit` the code to our repository. You should do this from now on whenever you have made a significant change to your work (there will be reminders to do this occasionally!).
-{% endpanel %}
 
 ### Developer Tools
 
@@ -259,10 +187,6 @@ Now it is your turn to start writing HTML. Experiment with adding more content, 
 -   a link from one part of your page to another
 
 Use CSS rules to change the formatting of your content.
-
-{% panel "info", "Notice!" %}
-Remember to commit your changes frequently, and definitely commit your final code at the end of the lab!
-{% endpanel %}
 
 ### ... Just one more thing
 

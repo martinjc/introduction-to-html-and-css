@@ -1,0 +1,22 @@
+body {
+    background-color: #ddd;
+}
+
+header {
+    background-color: #aaa;
+}
+
+footer {
+    background-color: #aaa;
+}
+
+section {
+    background-color: #ccc;
+}
+
+.main {
+    width: 70%;
+    margin: auto;
+}
+
+

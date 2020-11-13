@@ -1,0 +1,12 @@
+body {
+    background-color: #aaa;
+}
+
+.box {
+    text-align: center;
+    background-color: #eee;
+    margin: 30px;
+    border: 5px solid #fff;
+    padding: 40px;
+}
+

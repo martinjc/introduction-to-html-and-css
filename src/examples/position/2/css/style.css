@@ -1,0 +1,24 @@
+body {
+    background-color: #ddd;
+}
+
+header {
+    background-color: #aaa;
+}
+
+footer {
+    background-color: #aaa;
+}
+
+section {
+    float: left;
+    width: 66%;
+    background-color: #ccc;
+}
+
+aside {
+    float: right;
+    width: 33%;
+    background-color: #888;
+}
+

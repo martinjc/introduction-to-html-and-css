@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 2
-title: Cascading Style Sheets (CSS)
+title: "Week 3: Cascading Style Sheets (CSS)"
 ---
 
 CSS is the language used to format and style HTML documents, it is the language we use to tell a web browser how our elements should be displayed. With it, we can control the visible properties of HTML elements such as their size, position, colour and so on. We can also control how the elements behave in relation to other browser elements, or when conditions in the web browser change.
@@ -63,4 +63,16 @@ section p { … }
 
 looks for all paragraphs who have a `section` as an ancestor, or to look at it another way, all paragraphs who are descendants of a `section`.
 
-There are lots of ways to combine selectors,
+There are lots of ways to combine selectors.
+
+## Code examples
+
+There are a set of code examples that accompany this course showing the use of the fundamental HTML tags and CSS styles/rules that we look at. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
+
+-   CSS Intro
+    -   1 [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/1/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/1/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/cssintro/1/)
+    -   2 [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/2/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/2/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/cssintro/2/)
+    -   3 [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/3/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/3/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/cssintro/3/)
+    -   4 [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/4/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/4/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/cssintro/4/)
+    -   5 [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/5/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/5/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/cssintro/5/)
+    -   6 [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/6/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/cssintro/6/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/cssintro/6/)

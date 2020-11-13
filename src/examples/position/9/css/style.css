@@ -1,0 +1,29 @@
+body {
+    background-color: #ddd;
+}
+
+header {
+    position: relative;
+    background-color: #aaa;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 70%;
+    background-color: #aaa;
+}
+
+section {
+    position: relative;
+    top: -40px;
+    left: -30px;
+    background-color: #ccc;
+}
+
+.main {
+    width: 70%;
+    margin: auto;
+}
+
+
