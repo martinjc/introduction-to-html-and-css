@@ -1,0 +1,54 @@
+/* This is the same as example 1, but the CSS is slightly better organised */
+
+body {
+    margin:auto;
+    width: 90%;
+}
+
+section {
+    width: 100%;
+}
+
+aside {
+    width: 100%;
+}
+
+
+@media(min-width: 750px) {
+
+    section {
+        width: 66%;
+    }
+    
+    aside {
+        width: 33%;
+    }
+    
+    .first section {
+        float: left;
+    }
+    
+    .first aside {
+        float: right;
+    }
+    
+    .second section {
+        float: right;
+    }
+    
+    .second aside {
+        float: left;
+    }
+}
+
+@media(min-width: 1000px) {
+    body{
+        width: 80%;
+    }
+}
+
+@media(min-width: 1500px) {
+    body {
+        width: 60%;
+    }
+}

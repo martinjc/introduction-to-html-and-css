@@ -1,0 +1,30 @@
+/* This is the same as example 1, but we're using VW */
+
+body {
+    margin:auto;
+    width: 80vw;
+}
+
+section {
+    width: 66vw;
+}
+
+aside {
+    width: 33vw;
+}
+
+.first section {
+    float: left;
+}
+
+.first aside {
+    float: right;
+}
+
+.second section {
+    float: right;
+}
+
+.second aside {
+    float: left;
+}

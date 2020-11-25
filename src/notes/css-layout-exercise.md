@@ -30,3 +30,12 @@ While working on your website you may find the following resources useful:
 {{% panel theme="danger" header="... Just one more thing!" %}}
 Before you finish for the day, take a screenshot (or some screenshots) of your website and email them to ChorleyMJ@cardiff.ac.uk.
 {{%  /panel %}}
+
+## Code Examples
+
+There are a set of code examples that accompany this course showing the use of the fundamental HTML tags and CSS styles/rules that we look at. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
+
+-   CSS Sizing - Percents
+    -   Part 1 [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/css-sizing/percents/1/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/css-sizing/percents/1/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/css-sizing/percents/1/)
+    -   Part 2 [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/css-sizing/percents/2/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/css-sizing/percents/2/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/css-sizing/percents/2/)
+-   CSS Sizing - VHVW [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/css-sizing/vhvw/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/css-sizing/vhvw/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/css-sizing/vhvw/)
