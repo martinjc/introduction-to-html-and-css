@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Week 5 Exercise: Responsive Web Design"
-order: 9
+order: 10
 ---
 
 The task in this exercise is to practice using the CSS layout techniques we've been looking at for the last few weeks
