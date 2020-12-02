@@ -1,0 +1,45 @@
+body, * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    border: 1px solid red;
+    flex: 1 6 20%;
+}
+
+article {
+    border: 1px solid green;
+    flex: 3 1 60%;
+}
+
+aside {
+    border: 1px solid blue;
+    flex: 1 6 20%;
+}
+
+header, footer {
+    border: 1px solid black;
+    height: 10vh;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+@media(min-width: 800px) {
+    #main {
+        flex-direction: row;
+    }
+    nav {
+        order: 1;
+    }
+    article {
+        order: 2;
+    }
+    aside {
+        order: 3;
+    }
+}

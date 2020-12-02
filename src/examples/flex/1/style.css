@@ -1,0 +1,27 @@
+body, * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex-wrapper {
+    height: 40vh;
+    width: 80vw;
+    margin: auto;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.display-box {
+    border: 1px dashed black;
+    text-align: center;
+}
+
+.item {
+    flex: 0 1 12%;
+}
+
+#box4 {
+    align-self: flex-start;
+}

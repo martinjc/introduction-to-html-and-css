@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body,
+* {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+}
+
+header,
+footer {
+    min-height: 10vh;
+}
+
+nav,
+aside {
+    min-height: 10vh;
+}
+
+article {
+    min-height: calc(80vh - 20px);
+}
+
+nav {
+    border: 1px solid red;
+}
+
+article {
+    border: 1px solid green;
+}
+
+aside {
+    border: 1px solid blue;
+}
+
+header,
+footer {
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 500px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    header,
+    footer {
+        grid-column: 1 / -1;
+    }
+}
