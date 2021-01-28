@@ -30,6 +30,9 @@ Now we're ready to move on from the relatively simple CSS layout methods we've l
 
 ## Code Examples
 
+{% panopto "2975bca8-581a-4f06-8bf1-acbe0112a6cd" %}
+Please note: there's a better way to fix the grid layout at the end of this video - rather than tell the `nav` and the `aside` that they need to be in the first row, we could set the `grid-auto-flow` of the parent container to be `row-dense` and that would make the browser fill the earlier gaps in the existing row rather than add a new row.
+
 There are a set of code examples that accompany this course showing the use of the fundamental HTML tags and CSS styles/rules that we look at. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
 
 -   Simple grid (without CSS-Grid) [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/simple-grid/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/simple-grid/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/simple-grid/)
