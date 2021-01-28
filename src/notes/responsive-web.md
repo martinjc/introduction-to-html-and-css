@@ -7,6 +7,7 @@ order: 8
 Now we can annotate our content and documents so a web browser can understand their structure, and can visually style that content and lay it out on a page, we will start to think about how our users access this content and what that means for our webpage design. We'll look at some of the simpler tools at our disposal to help us build pages that are accessible no matter what type of device our users are using.
 
 {% panopto "38410524-1604-4c99-bb23-ac7801726581" %}
+[Slides for the above video](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/slides/RWD.pptx)
 
 {% panopto "7f54fcee-756f-4784-9e3c-ac7201558d79" %}
 
