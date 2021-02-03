@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Week 5 Exercise: Responsive Web Design"
+title: "Exercise: Responsive Web Design"
 order: 10
 ---
 

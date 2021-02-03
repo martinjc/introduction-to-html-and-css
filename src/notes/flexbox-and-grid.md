@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Week 5: Flexbox and Grid"
+title: "Flexbox and Grid"
 order: 9
 ---
 

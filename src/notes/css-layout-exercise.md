@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Week 4 Exercise: CSS Layout"
+title: "Exercise: CSS Layout"
 order: 7
 ---
 

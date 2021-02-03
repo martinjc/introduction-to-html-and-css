@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 2
-title: "Week 3: Cascading Style Sheets (CSS)"
+title: "Cascading Style Sheets (CSS)"
 ---
 
 CSS is the language used to format and style HTML documents, it is the language we use to tell a web browser how our elements should be displayed. With it, we can control the visible properties of HTML elements such as their size, position, colour and so on. We can also control how the elements behave in relation to other browser elements, or when conditions in the web browser change.

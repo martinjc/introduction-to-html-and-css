@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Week 4: CSS Selectors and Specificity"
+title: "CSS Selectors and Specificity"
 order: 4
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Week 5: Responsive Web Design"
+title: "Responsive Web Design"
 order: 8
 ---
 

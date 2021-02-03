@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 3
-title: "Week 3 Exercise: Writing a Web Page"
+title: "Exercise: Writing a Web Page"
 ---
 
 {% panopto "2a958b83-e6cd-4ce3-a95c-ac7201594247" %}

@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 5
-title: "Week 4: CSS Layout"
+title: "CSS Layout"
 ---
 
 ## Compulsory Reading
