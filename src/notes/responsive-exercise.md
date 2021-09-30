@@ -1,12 +1,10 @@
 ---
 layout: page
-title: "Exercise: Responsive Web Design"
+title: "Exercise 3: Responsive Web Design"
 order: 10
 ---
 
 The task in this exercise is to practice using the CSS layout techniques we've been looking at for the last few weeks
-
-## This week's task
 
 You should look at the CSS layouts below and attempt to build each one using as many different layout techniques as possible. You can use floats, flexbox, CSS-Grid, absolute/relative positioning, whatever methods you like. You should try to minimise the amount of CSS code required.
 

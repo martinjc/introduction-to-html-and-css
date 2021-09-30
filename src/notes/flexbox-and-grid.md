@@ -12,7 +12,7 @@ Now we're ready to move on from the relatively simple CSS layout methods we've l
 
 -   [A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - A complete guide to FlexBox
 
-{% panopto "ff46614b-1d84-4ba4-af48-ac7201558ccd" %}
+{% panopto "099ce3c5-83e4-4dab-a7b4-adb300d6f6a4" %}
 
 ## CSS Grid
 
@@ -20,7 +20,7 @@ Now we're ready to move on from the relatively simple CSS layout methods we've l
 
 -   [A complete guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - A complete guide to CSS Grid
 
-{% panopto "1edf64b1-5445-4284-a716-ac7201558abf" %}
+{% panopto "34baaa7a-d17f-408f-94a4-adb300d6f741" %}
 
 ## Related Reading
 
@@ -30,12 +30,13 @@ Now we're ready to move on from the relatively simple CSS layout methods we've l
 
 ## Code Examples
 
-{% panopto "2975bca8-581a-4f06-8bf1-acbe0112a6cd" %}
+{% panopto "770829f2-5c0b-4ef2-9b8b-adb300d6f8ea" %}
 Please note: there's a better way to fix the grid layout at the end of this video - rather than tell the `nav` and the `aside` that they need to be in the first row, we could set the `grid-auto-flow` of the parent container to be `row-dense` and that would make the browser fill the earlier gaps in the existing row rather than add a new row.
 
 There are a set of code examples that accompany this course showing the use of the fundamental HTML tags and CSS styles/rules that we look at. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
 
--   Simple grid (without CSS-Grid) [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/simple-grid/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/simple-grid/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/simple-grid/)
--   Flexbox example [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/flex/1/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/flex/1/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/flex/1)
--   Responsive Flexbox example [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/flex/2/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/flex/2/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/flex/2)
--   Responsive CSS Grid example [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/grid/1/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/grid/1/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/grid/1)
+-   Simple grid (without CSS-Grid) [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/simple-grid/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/simple-grid/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/simple-grid/)
+-   Flexbox example [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/flex/1/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/flex/1/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/flex/1)
+-   Responsive Flexbox example [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/flex/2/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/flex/2/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/flex/2)
+-   Responsive CSS Grid example [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/grid/1/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/grid/1/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/grid/1)
+

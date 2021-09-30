@@ -1,10 +1,10 @@
 ---
 layout: page
 order: 3
-title: "Exercise: Writing a Web Page"
+title: "Exercise 1: Writing a Web Page"
 ---
 
-{% panopto "2a958b83-e6cd-4ce3-a95c-ac7201594247" %}
+{% panopto "0deb7203-20c4-4714-8d92-adb300d6f2cc" %}
 
 During this activity for this topic we will put what we have learnt into practice by creating a simple HTML web page.
 
@@ -18,8 +18,8 @@ Let's create a directory for our work and then move into that directory:
 
 ```bash
 $ cd ~
-$ mkdir cmt120-labs
-$ cd cmt120-labs
+$ mkdir intro-html-css
+$ cd intro-html-css
 ```
 
 {% panel "danger", "Note!" %}
@@ -39,10 +39,10 @@ Switch to your text editor, and we'll start writing our first HTML page. Enter t
 </html>
 ```
 
-Now save this file as `index.html`, in a new directory named `Week1` inside your `cmt120-labs` directory. Your file and directory structure should look like this:
+Now save this file as `index.html`, in a new directory named `Week1` inside your `intro-html-css` directory. Your file and directory structure should look like this:
 
 ```
-cmt120-labs
+intro-html-css
   |- Week1
      |- index.html
 ```
@@ -79,10 +79,10 @@ When we are developing a web page we can run a simple local web server that will
 If you don't already have one open, open a command line and navigate to the folder where our lab code is stored:
 
 ```bash
-cd cmt120-labs
+cd intro-html-css
 ```
 
-We can use a built-in feature of the Python programming language to run a simple web server:
+We can use a built-in feature of the Python programming language to run a simple web server. Assuming you have Python installed, you can type:
 
 ```bash
 python3 -m http.server
@@ -95,10 +95,6 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
 If we enter the local IP address for the machine (`http://127.0.0.1:8000`) in the address bar of the browser, we will see the directory listing for our web server:
-
-![Directory listing on server]({{ "/img/local-server-directory.png" | url }})
-
-You can see two directories: our `Week1` directory where our webpage is saved, and the special `.git` folder created by Git, where the data for our Git repository is stored. If we click on the `Week1` directory, we will see our `index.html` page:
 
 ![Web page on local server]({{ "/img/local-server-page.png" | url }})
 
@@ -115,7 +111,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 127.0.0.1 - - [17/Sep/2018 21:03:20] "GET /Week1/ HTTP/1.1" 200 -
 ```
 
-The first request was for '/', the root directory where the server is running. We can see the code `200` here, indicating this request was successful. (We'll look at response codes in more depth later). This was followed by a request for `/favicon.ico`. This is the browser requesting an icon to display representing the web page. We haven't provided one, so this request has a `404` response - which means the requested resource has not been found. The final request is asking for the `Week1` directory, which succeeds as the browser is able to respond with the `index.html` page.
+The first request was for '/', the root directory where the server is running. We can see the code `200` here, indicating this request was successful. (We'll look at response codes in more depth later). This was followed by a request for `/favicon.ico`. This is the browser requesting an icon to display representing the web page. We haven't provided one, so this request has a `404` response - which means the requested resource has not been found. 
 
 {% panel "info", "Notice!" %}
 From now on, we'll use a local web browser to serve our web pages while we're developing them. Remember to use `python -m http.server` to start a web server in your root directory whenever you start working on your code.
@@ -141,13 +137,6 @@ Which means our page will now look like:
 
 ![Web page content]({{ "/img/page-content.png" | url }})
 
-We like the change we've made to the page, so let's commit these changes:
-
-```bash
-git add Week1/index.html
-git commit -m "added a paragraph"
-```
-
 ### Adding CSS
 
 Once we've got some HTML content, we can start to style it using CSS.
@@ -160,7 +149,7 @@ Before we can link the CSS to our HTML, we need to save the file. Here I have sa
 the `index.html` file.
 
 ```
-cmt120-labs/
+intro-html-css/
   |- Week1/
     |- index.html
       |- css/

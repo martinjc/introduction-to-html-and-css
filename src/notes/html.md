@@ -6,7 +6,7 @@ title: "Hypertext Markup Language (HTML)"
 
 HTML stands for HyperText Markup Language. In the simplest terms, it’s the language we use to build webpages. It is not really a ‘programming’ language, in that it is not a set of code that instructs the computer to carry out any particular operations. Rather as the name suggests it is a ‘markup’ language, a set of code that adds additional information to data. If we take some content that we’d like to put on the web, anything, from simple pieces of text, graphics and images, lists and tables, all the way through to complex interactive content, HTML is the language we use to explain to our Web browser what that content is. The web browser can look at our HTML, which describes our content, and then understand the structure of our content and how it should be displayed on the screen. This browser process, of taking our content, examining it to come up with a ‘model’ of what the content is, and then displaying it on the screen is known as ‘rendering’.
 
-{% panopto "1ab59c15-9aca-4254-afa4-ac69017c1678" %}
+{% panopto "c9dea73a-93bd-4b78-a3cc-adb300d6efa6" %}
 
 ## Markup
 
@@ -27,7 +27,7 @@ Each attribute inside an HTML element consists of multiple parts - the ‘name�
 
 ## Documents
 
-{% panopto "7ce9ed95-8ce0-4aa1-b37c-ac69017c1580" %}
+{% panopto "fa69f177-7cc3-4fdb-954e-adb300d6f0e0" %}
 
 This is a very basic ‘minimal’ HTML document:
 
@@ -109,7 +109,7 @@ Because we opened the strong tag after we opened the paragraph tag, we must clos
 
 ## HTMl tags
 
-{% panopto "2d887a0a-7d25-4ed6-9ce7-ac69017c14fe" %}
+{% panopto "d717f823-4e73-40ac-894a-adb300d6f035" %}
 
 We have already seen that to display content on a webpage, we need to tell the browser what sort of content we have. We have also seen that we use HTML tags to 'annotate' or mark up our content. There are lots of different HTML tags that we can use to annotate our content. We’ll look at a few more here, but for a more comprehensive list of HTML tags, and guidance on how to use them, we recommend you look at the MDN HTML documentation online.
 
@@ -176,7 +176,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML
 
 ## Block and Inline
 
-{% panopto "b4938770-a167-4585-ac8d-ac69017c160f" %}
+{% panopto "25369415-baed-40e6-989f-adb300d6f194" %}
 
 Some elements are 'block' elements. These will be displayed starting on a new line, by default they expand to take up all the width that they can, and they can contain both block and inline elements.
 
@@ -192,8 +192,9 @@ There are a set of code examples that accompany this course showing the use of t
 -   Headings, Paragraphs and Line BReaks [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/h-p-br/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/h-p-br/)
 -   Links [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/links/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/links/)
 -   Images [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/images/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/images/)
--   Centred Image [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/images/centred-image.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/images/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/images/centred-image.html)
+-   Centred Image [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/images/centred-image.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/images/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/images/centred-image.html)
 -   Formatting [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/formatting/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/formatting/)
 -   Lists [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/lists/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/lists/)
 -   Grouping [[Code]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/grouping/index.html) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/grouping/)
+
 

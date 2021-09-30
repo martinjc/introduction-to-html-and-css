@@ -4,7 +4,7 @@ title: "CSS Selectors and Specificity"
 order: 4
 ---
 
-{% panopto "d84cf468-7e50-4ff2-949f-ac7201558c28" %}
+{% panopto "2996132b-cd1f-4356-98fa-adb300d6f3ae" %}
 
 We've seen that we use HTML to markup content, to give that content structure and meaning, and that we use CSS to style and present the content.
 
@@ -71,18 +71,19 @@ The values are added together, and the rule with the highest specifity is the on
 
 ## CSS Selectors and Specificity Demo
 
-{% panopto "33892e82-c64a-42e8-babe-ac7201558f44" %}
+{% panopto "f10c54ca-4d70-45a2-a118-adb300d6f464" %}
 
 ## Code Examples
 
 There are a set of code examples that accompany this course showing the use of the fundamental HTML tags and CSS styles/rules that we look at. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
 
 -   Boxes and Box Model
-    -   Part 1 [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/boxes/1/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/boxes/1/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/boxes/1/)
-    -   Part 2 [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/boxes/2/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/boxes/2/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/boxes/2/)
--   Pseudo Classes and Pseudo Elements [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/pseudo/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/pseudo/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/pseudo/)
--   Inheritance [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/inheritance/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/inheritance/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/inheritance/)
--   Top to Bottom [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/top-to-bottom/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/top-to-bottom/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/top-to-bottom/)
--   Specificity [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/specificity/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/specificity/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/specificity/)
--   Styling Lists [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/stylinglists/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/stylinglists/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/stylinglists/)
--   Fonts [[HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/fonts/index.html) [[CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/fonts/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/fonts/)
+    -   Part 1 [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/boxes/1/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/boxes/1/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/boxes/1/)
+    -   Part 2 [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/boxes/2/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/boxes/2/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/boxes/2/)
+-   Pseudo Classes and Pseudo Elements [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/pseudo/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/pseudo/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/pseudo/)
+-   Inheritance [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/inheritance/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/inheritance/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/inheritance/)
+-   Top to Bottom [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/top-to-bottom/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/top-to-bottom/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/top-to-bottom/)
+-   Specificity [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/specificity/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/specificity/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/specificity/)
+-   Styling Lists [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/stylinglists/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/stylinglists/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/stylinglists/)
+-   Fonts [[Code: HTML]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/fonts/index.html) [[Code: CSS]](https://github.com/martinjc/introduction-to-html-and-css/blob/master/src/examples/fonts/css/style.css) [[Demo]](https://martinjc.github.io/introduction-to-html-and-css/examples/fonts/)
+
