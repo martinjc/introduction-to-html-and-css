@@ -14,6 +14,10 @@ For this exercise we'll need a few different applications open. You should searc
 2. A command line terminal
 3. A web browser for viewing the web page we create
 
+{% panel "danger", "Note!" %}
+The command line examples in this exercise assume you are using a 'bash' type terminal. Many of these commands will not work on the Windows command line. They will work fine on Windows if you use the GitBash terminal.
+{% endpanel %}
+
 Let's create a directory for our work and then move into that directory:
 
 ```bash
