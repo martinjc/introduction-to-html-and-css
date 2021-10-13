@@ -38,7 +38,7 @@ Note the American English spelling of the colour property, which is used to set 
 This uses the value of an elements class attribute to target all elements with that particular class. It is denoted using a ‘.’. So, for example, to target all the ‘h2’ elements in an HTML document that have a class of ‘red’ and turn their background’s red, we could use a rule like this:
 
 ```css
-.red {
+h2.red {
     background-color: red;
 }
 ```
