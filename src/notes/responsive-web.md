@@ -2,6 +2,12 @@
 layout: page
 title: "Responsive Web Design"
 order: 8
+parent: "Introduction to HTML and CSS"
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    parent: "{{ parent }}"
+    order: "{{ order }}"
 ---
 
 Now we can annotate our content and documents so a web browser can understand their structure, and can visually style that content and lay it out on a page, we will start to think about how our users access this content and what that means for our webpage design. We'll look at some of the simpler tools at our disposal to help us build pages that are accessible no matter what type of device our users are using.

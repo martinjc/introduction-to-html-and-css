@@ -2,6 +2,12 @@
 layout: page
 title: "Exercise 3: Responsive Web Design"
 order: 10
+parent: "Introduction to HTML and CSS"
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    parent: "{{ parent }}"
+    order: "{{ order }}"
 ---
 
 The task in this exercise is to practice using the CSS layout techniques we've been looking at for the last few weeks

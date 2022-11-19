@@ -15,15 +15,15 @@ p {
 }
 
 h2 {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: calc($spacing-unit / 2);
 }
 
 h1,
 h2 {
     margin-left: -$gap-size;
-    padding-top: $spacing-unit/4;
-    padding-bottom: $spacing-unit/8;
-    padding-left: $spacing-unit/8;
+    padding-top: calc($spacing-unit/4);
+    padding-bottom: calc($spacing-unit/8);
+    padding-left: calc($spacing-unit/8);
 }
 
 ul,
@@ -34,8 +34,8 @@ ol {
 
 pre {
     background-color: $grey-color-light;
-    margin-bottom: $spacing-unit / 2;
-    padding: $spacing-unit/4;
+    margin-bottom: calc($spacing-unit / 2);
+    padding: calc($spacing-unit/4);
     overflow-x: scroll;
 }
 
@@ -52,13 +52,13 @@ pre {
     h2,
     h3 {
         background-color: $background-color;
-        margin-bottom: $spacing-unit/4;
+        margin-bottom: calc($spacing-unit/4);
         padding-left: 2px;
         clip-path: none;
     }
 
     p {
-        margin-bottom: $spacing-unit/2;
+        margin-bottom: calc($spacing-unit/2);
     }
 
     em {
@@ -80,27 +80,41 @@ pre {
         background-color: #ffc107;
         border-radius: 5px;
         margin-bottom: $spacing-unit;
-        padding: $spacing-unit/4;
+        padding: calc($spacing-unit/4);
 
         .panel-header {
             font-size: $large-font-size;
-            padding-top: $spacing-unit/2;
-            padding-bottom: $spacing-unit/2;
+            padding-top: calc($spacing-unit/2);
+            padding-bottom: calc($spacing-unit/2);
         }
     }
 }
 
 .comments {
-    margin-top: $spacing-unit/2;
+    margin-top: calc($spacing-unit/2);
 }
 
 nav {
+
     ol,
     ul {
         margin-bottom: 0;
     }
 
     margin-bottom: $spacing-unit;
+
+    &.breadcrumb {
+
+        ol,
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        li:before {
+            content: "> ";
+        }
+    }
 }
 
 @include media-query($small-break) {
@@ -112,15 +126,17 @@ nav {
 
 @include media-query($medium-break) {
     body {
-        max-width: $max-content-size;
+        max-width:800px;
+        width: 800px;
+        margin: 20px;
     }
 
     h1,
     h2,
     h3 {
-        padding-top: $spacing-unit/4;
-        padding-bottom: $spacing-unit/8;
-        padding-left: $spacing-unit/8;
+        padding-top: calc($spacing-unit/4);
+        padding-bottom: calc($spacing-unit/8);
+        padding-left: calc($spacing-unit/8);
     }
 
     .container {

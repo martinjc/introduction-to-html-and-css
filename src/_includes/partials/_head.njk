@@ -1,10 +1,10 @@
-  
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ title or metadata.title }}</title>
+    <title>{{ title or metadata.title or eleventyNavigation.title }}</title>
 
     <meta name="description" content="{{ description or metadata.description }}">
 
@@ -16,7 +16,7 @@
 
     <meta property="og:url" content="{{ url }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ title or metadata.title }}">
+<meta property="og:title" content="{{ title or metadata.title or eleventyNavigation.title }}">
     <meta property="og:site_name" content="Introduction to Programming">
     <meta property="og:locale" content="en_GB">
     <meta property="article:author" content="Martin Chorley">
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@martinjc">
     <meta name="twitter:url" content="{{ url }}">
-    <meta name="twitter:title" content="{{ title or metadata.title }}">
+    <meta name="twitter:title" content="{{ title or metadata.title or eleventyNavigation.title }}">
 
     <link rel="icon" href="{{ '/favicon.ico' | url }}">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">

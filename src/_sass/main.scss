@@ -28,7 +28,7 @@ $gap-size: 10px;
 $max-content-size: 1200px;
 
 $small-break: 600px;
-$medium-break: 1000px;
+$medium-break: 800px;
 
 @mixin media-query($break) {
     @media screen and (min-width: $break) {

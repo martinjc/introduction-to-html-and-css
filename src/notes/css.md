@@ -2,6 +2,12 @@
 layout: page
 order: 2
 title: "Cascading Style Sheets (CSS)"
+parent: "Introduction to HTML and CSS"
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    parent: "{{ parent }}"
+    order: "{{ order }}"
 ---
 
 CSS is the language used to format and style HTML documents, it is the language we use to tell a web browser how our elements should be displayed. With it, we can control the visible properties of HTML elements such as their size, position, colour and so on. We can also control how the elements behave in relation to other browser elements, or when conditions in the web browser change.
@@ -29,9 +35,9 @@ p {
 }
 ```
 
-{{% panel theme="danger" header="Warning!"  %}}
+{% panel theme="danger", header="Warning!"  %}
 Note the American English spelling of the colour property, which is used to set the foreground colour of an HTML element. Most CSS properties use American English spellings.
-{{% /panel %}}
+{% endpanel %}
 
 ## Class selector
 

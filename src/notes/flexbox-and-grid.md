@@ -2,6 +2,12 @@
 layout: page
 title: "Flexbox and Grid"
 order: 9
+parent: "Introduction to HTML and CSS"
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    parent: "{{ parent }}"
+    order: "{{ order }}"
 ---
 
 Now we're ready to move on from the relatively simple CSS layout methods we've looked at so far, and can look at Flexbox and Grid, two modern CSS layout methods that allow us to create complex, flexible layouts for our content.

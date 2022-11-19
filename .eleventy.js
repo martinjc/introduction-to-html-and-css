@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
     const PRODUCTION_DIR = 'introduction-to-html-and-css';
 
     // bunch 'o plugins. They do things
+    const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
     const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
     const markdownItFootnote = require("markdown-it-footnote");
     const markdownItEmoji = require("markdown-it-emoji");
@@ -18,7 +19,6 @@ module.exports = function(eleventyConfig) {
 
     // copy our root files and images
     eleventyConfig.addPassthroughCopy({"src/_root/*.*": "./"});
-    eleventyConfig.addPassthroughCopy("src/img");
     eleventyConfig.addPassthroughCopy("src/examples");
     eleventyConfig.addPassthroughCopy("src/slides");
 
@@ -27,6 +27,7 @@ module.exports = function(eleventyConfig) {
 
     // syntax highlighting
     eleventyConfig.addPlugin(syntaxHighlight);
+    eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     // add footnotes and emoji to the markdown parser
     let markdownLib = markdownIt({
@@ -48,6 +49,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("sortByPageOrder", sortByPageOrder);
 
     // register our custom shortcodes
+    eleventyConfig.addShortcode("image", shortcodes.imageShortcode);
     eleventyConfig.addShortcode("questions", shortcodes.insertQuestions);
     eleventyConfig.addShortcode("panopto", shortcodes.insertPanopto);
     eleventyConfig.addShortcode("reponame", shortcodes.getRepoName);
@@ -57,9 +59,10 @@ module.exports = function(eleventyConfig) {
     return {
       pathPrefix: isProduction ? PRODUCTION_DIR : '/',
       dir: {
-        input: "./src",      
+        input: "./src",
         output: "./public",
         includes: "_includes"
-      }
+      },
+      markdownTemplateEngine: "njk"
     };
 };

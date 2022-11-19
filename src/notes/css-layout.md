@@ -2,6 +2,12 @@
 layout: page
 order: 5
 title: "CSS Layout"
+parent: "Introduction to HTML and CSS"
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    parent: "{{ parent }}"
+    order: "{{ order }}"
 ---
 
 ## Compulsory Reading

@@ -2,6 +2,12 @@
 layout: page
 title: "CSS Selectors and Specificity"
 order: 4
+parent: "Introduction to HTML and CSS"
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    parent: "{{ parent }}"
+    order: "{{ order }}"
 ---
 
 {% panopto "2996132b-cd1f-4356-98fa-adb300d6f3ae" %}

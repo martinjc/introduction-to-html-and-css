@@ -2,6 +2,12 @@
 layout: page
 order: 1
 title: "Hypertext Markup Language (HTML)"
+parent: "Introduction to HTML and CSS"
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    parent: "{{ parent }}"
+    order: "{{ order }}"
 ---
 
 HTML stands for HyperText Markup Language. In the simplest terms, it’s the language we use to build webpages. It is not really a ‘programming’ language, in that it is not a set of code that instructs the computer to carry out any particular operations. Rather as the name suggests it is a ‘markup’ language, a set of code that adds additional information to data. If we take some content that we’d like to put on the web, anything, from simple pieces of text, graphics and images, lists and tables, all the way through to complex interactive content, HTML is the language we use to explain to our Web browser what that content is. The web browser can look at our HTML, which describes our content, and then understand the structure of our content and how it should be displayed on the screen. This browser process, of taking our content, examining it to come up with a ‘model’ of what the content is, and then displaying it on the screen is known as ‘rendering’.

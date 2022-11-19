@@ -1,6 +1,12 @@
 ---
 layout: page
 title: About
+order: 1
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    parent: "{{ parent }}"
+    order: "{{ order }}"
 ---
 
 This is a short course in HTML & CSS created as an introduction to the topic primarily for Postgraduate students at the School of Computer Science and Informatics at Cardiff University.

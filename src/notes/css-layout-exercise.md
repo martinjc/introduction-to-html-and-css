@@ -2,14 +2,20 @@
 layout: page
 title: "Exercise 2: CSS Layout"
 order: 7
+parent: "Introduction to HTML and CSS"
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    parent: "{{ parent }}"
+    order: "{{ order }}"
 ---
 
 The task in this exercise is to produce a website with a fairly complex layout. You should look at a website you visit often, and attempt to recreate that website layout using the HTML and CSS we have looked at to date.
 
-{{% panel theme="danger"  header="Note!"%}}
+{% panel theme="danger", header="Note!" %}
 
 While working on your website, you should make a note of the things that work, the things that don’t work, what is easy to accomplish, and what has been tricky to do.
-{{% /panel %}}
+{% endpanel %}
 
 ### Exercise
 
@@ -27,9 +33,9 @@ While working on your website you may find the following resources useful:
 
 ### ... Just one more thing
 
-{{% panel theme="danger" header="... Just one more thing!" %}}
+{% panel theme="danger", header="... Just one more thing!" %}
 Before you finish for the day, take a screenshot (or some screenshots) of your website and email them to ChorleyMJ@cardiff.ac.uk.
-{{%  /panel %}}
+{%  endpanel %}
 
 
 

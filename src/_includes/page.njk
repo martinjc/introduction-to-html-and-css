@@ -9,16 +9,15 @@ layout: base.njk
 
 <div class="container">
     <nav class="sidebar">
-        <a href='{{ "/" | url }}'>Home</a>
-        <ul>
-            {%- for note in collections.notes | sortByPageOrder -%}
-                <li><a href="{{ note.url | url }}">{{ note.data.title }}</a></li>
-            {%- endfor -%}
-        </ul>
-        <a href="{{ '/about/' | url }}">About</a>
+        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
     </nav>
 
     <div class="content">
+        {% if eleventyNavigation and eleventyNavigation.parent %}
+        <nav class="breadcrumb">
+        {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.parent, {includeSelf: true}) | eleventyNavigationToHtml | safe }}
+        </nav>
+        {% endif %}
         {{ content | safe }}
         <div class="nextprev">
         {%- set nextPost = collections.notes | sortByPageOrder | getNextCollectionItem(page) %}
@@ -35,7 +34,7 @@ layout: base.njk
             async>
             </script>
         </div>
-        
+
     </div>
 </div>
 
@@ -46,4 +45,20 @@ document.querySelectorAll('.answer-block').forEach(d => {
         d.classList.toggle('selected');
     });
 });
+    const urlParams = new URLSearchParams(window.location.search);
+    const embed = urlParams.get('embed');
+    if (embed) {
+        document.querySelectorAll('.comments').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.sidebar').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.breadcrumb').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.nextprev').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+    }
 </script>

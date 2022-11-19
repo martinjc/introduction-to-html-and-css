@@ -2,6 +2,12 @@
 layout: page
 order: 3
 title: "Exercise 1: Writing a Web Page"
+parent: "Introduction to HTML and CSS"
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    parent: "{{ parent }}"
+    order: "{{ order }}"
 ---
 
 {% panopto "0deb7203-20c4-4714-8d92-adb300d6f2cc" %}
@@ -51,7 +57,7 @@ intro-html-css
      |- index.html
 ```
 
-{% panel "primary" "Question" %}
+{% panel "primary", "Question" %}
 Why do we use the name `index.html` for the web page?
 
 The name `index.html` is an important name for the default first page in a website. When a client (web browser) makes a request to a web server, but does not actually request a specific page, the web server will usually try to serve any file at that location named `index.html` by default.
