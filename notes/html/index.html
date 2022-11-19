@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    
+  
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
 
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Hypertext Markup Language (HTML)">
+<meta property="og:title" content="Hypertext Markup Language (HTML)">
     <meta property="og:site_name" content="Introduction to Programming">
     <meta property="og:locale" content="en_GB">
     <meta property="article:author" content="Martin Chorley">
@@ -45,14 +45,26 @@
 
 <div class="container">
     <nav class="sidebar">
-        <a href='/introduction-to-html-and-css/'>Home</a>
-        <ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Exercise 1: Writing a Web Page</a></li><li><a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">CSS Selectors and Specificity</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout/">CSS Layout</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout-exercise/">Exercise 2: CSS Layout</a></li><li><a href="/introduction-to-html-and-css/notes/responsive-web/">Responsive Web Design</a></li><li><a href="/introduction-to-html-and-css/notes/flexbox-and-grid/">Flexbox and Grid</a></li><li><a href="/introduction-to-html-and-css/notes/responsive-exercise/">Exercise 3: Responsive Web Design</a></li></ul>
-        <a href="/introduction-to-html-and-css/about/">About</a>
+        <ul><li><a href="/introduction-to-html-and-css/">Introduction to HTML and CSS</a><ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li>
+<li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Exercise 1: Writing a Web Page</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">CSS Selectors and Specificity</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-layout/">CSS Layout</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-layout-exercise/">Exercise 2: CSS Layout</a></li>
+<li><a href="/introduction-to-html-and-css/notes/responsive-web/">Responsive Web Design</a></li>
+<li><a href="/introduction-to-html-and-css/notes/flexbox-and-grid/">Flexbox and Grid</a></li>
+<li><a href="/introduction-to-html-and-css/notes/responsive-exercise/">Exercise 3: Responsive Web Design</a></li></ul></li>
+<li><a href="/introduction-to-html-and-css/about/">About</a></li></ul>
     </nav>
 
     <div class="content">
+        
+        <nav class="breadcrumb">
+        <ul><li><a href="/introduction-to-html-and-css/">Introduction to HTML and CSS</a></li></ul>
+        </nav>
+        
         <p>HTML stands for HyperText Markup Language. In the simplest terms, it’s the language we use to build webpages. It is not really a ‘programming’ language, in that it is not a set of code that instructs the computer to carry out any particular operations. Rather as the name suggests it is a ‘markup’ language, a set of code that adds additional information to data. If we take some content that we’d like to put on the web, anything, from simple pieces of text, graphics and images, lists and tables, all the way through to complex interactive content, HTML is the language we use to explain to our Web browser what that content is. The web browser can look at our HTML, which describes our content, and then understand the structure of our content and how it should be displayed on the screen. This browser process, of taking our content, examining it to come up with a ‘model’ of what the content is, and then displaying it on the screen is known as ‘rendering’.</p>
-<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=c9dea73a-93bd-4b78-a3cc-adb300d6efa6&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=c9dea73a-93bd-4b78-a3cc-adb300d6efa6&v=1" width="600" height="320" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 <p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c9dea73a-93bd-4b78-a3cc-adb300d6efa6" target="blank">link to the full version of the video</a></small></p>
 <h2>Markup</h2>
 <p>We use HTML tags to markup our content so that the browser will understand what our content is, and how to render it. There are many different tags in HTML, which can be used to add meaning and structure to different types of content. An important part of the process of creating a webpage is to use the correct HTML tags that accurately describe the role of the content being added to the document. We’ll see throughout this chapter that there are many ways to give our content the correct semantic meaning, from using particular tags to using informative naming schemes for CSS classes and IDs. All these things together allow us to build a rich structured document, where elements are described in terms that allow both human and machine to understand what their position and role is within a document.</p>
@@ -61,7 +73,7 @@
 <p>It is used to create hyperlinks between or within webpages. The whole thing together is referred to as an element. It has an opening tag (<code>&lt;a … &gt;</code>) at the beginning, and a closing tag at the end (<code>&lt;/a&gt;</code>). In between the opening and closing tags we have the element content. In this case, it is just some text, but this content could be anything, even another HTML element. We’ll see examples of this ‘nesting’ of HTML elements later. For this simple element, inside our opening tag, we have an ‘attribute’. This contains some extra information about the element, which can allow extra functionality. In this case, our attribute is an ‘href’ attribute, and it tells us where this anchor element should ‘link’ to. Clicking on this link in a webpage will take you to <a href="http://www.mdn.com">www.mdn.com</a> - the Mozilla Developer Network, which is an excellent resource for learning about web technologies.</p>
 <p>Each attribute inside an HTML element consists of multiple parts - the ‘name’ of the attribute, and the ‘value’ of the attribute, separated by an equals sign. The value of the attribute is enclosed in quotes, and there is a space between the element name and the name of the attribute. You can use either single or double quotes to enclose attribute values, but whichever you use you should be consistent throughout your HTML code. Multiple attributes inside an HTML element are separated by spaces.</p>
 <h2>Documents</h2>
-<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=fa69f177-7cc3-4fdb-954e-adb300d6f0e0&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=fa69f177-7cc3-4fdb-954e-adb300d6f0e0&v=1" width="600" height="320" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 <p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=fa69f177-7cc3-4fdb-954e-adb300d6f0e0" target="blank">link to the full version of the video</a></small></p>
 <p>This is a very basic ‘minimal’ HTML document:</p>
 <pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Hello World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Hello World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
@@ -80,7 +92,7 @@
 <pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Hello World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Hello <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">></span></span>World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
 <p>Because we opened the strong tag after we opened the paragraph tag, we must close it before we close the paragraph tag.</p>
 <h2>HTMl tags</h2>
-<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=d717f823-4e73-40ac-894a-adb300d6f035&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=d717f823-4e73-40ac-894a-adb300d6f035&v=1" width="600" height="320" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 <p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d717f823-4e73-40ac-894a-adb300d6f035" target="blank">link to the full version of the video</a></small></p>
 <p>We have already seen that to display content on a webpage, we need to tell the browser what sort of content we have. We have also seen that we use HTML tags to ‘annotate’ or mark up our content. There are lots of different HTML tags that we can use to annotate our content. We’ll look at a few more here, but for a more comprehensive list of HTML tags, and guidance on how to use them, we recommend you look at the MDN HTML documentation online.</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>…<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
@@ -106,7 +118,7 @@ Comments in HTML are started using <code>&lt;!--</code> and finished using <code
 <p><a href="https://www.htmldog.com/references/html/tags/">https://www.htmldog.com/references/html/tags/</a></p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a></p>
 <h2>Block and Inline</h2>
-<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=25369415-baed-40e6-989f-adb300d6f194&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=25369415-baed-40e6-989f-adb300d6f194&v=1" width="600" height="320" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 <p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=25369415-baed-40e6-989f-adb300d6f194" target="blank">link to the full version of the video</a></small></p>
 <p>Some elements are ‘block’ elements. These will be displayed starting on a new line, by default they expand to take up all the width that they can, and they can contain both block and inline elements.</p>
 <p>Other elements are ‘inline’ elements. These will be displayed on the same line as the content around them, are only as wide as necessary to fit their content, and they can contain other inline elements.</p>
@@ -135,7 +147,7 @@ Comments in HTML are started using <code>&lt;!--</code> and finished using <code
             async>
             </script>
         </div>
-        
+
     </div>
 </div>
 
@@ -146,6 +158,22 @@ document.querySelectorAll('.answer-block').forEach(d => {
         d.classList.toggle('selected');
     });
 });
+    const urlParams = new URLSearchParams(window.location.search);
+    const embed = urlParams.get('embed');
+    if (embed) {
+        document.querySelectorAll('.comments').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.sidebar').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.breadcrumb').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.nextprev').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+    }
 </script>
     
   </body>

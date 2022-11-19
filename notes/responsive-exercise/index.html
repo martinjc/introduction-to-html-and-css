@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    
+  
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
 
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Exercise 3: Responsive Web Design">
+<meta property="og:title" content="Exercise 3: Responsive Web Design">
     <meta property="og:site_name" content="Introduction to Programming">
     <meta property="og:locale" content="en_GB">
     <meta property="article:author" content="Martin Chorley">
@@ -45,12 +45,24 @@
 
 <div class="container">
     <nav class="sidebar">
-        <a href='/introduction-to-html-and-css/'>Home</a>
-        <ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Exercise 1: Writing a Web Page</a></li><li><a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">CSS Selectors and Specificity</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout/">CSS Layout</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout-exercise/">Exercise 2: CSS Layout</a></li><li><a href="/introduction-to-html-and-css/notes/responsive-web/">Responsive Web Design</a></li><li><a href="/introduction-to-html-and-css/notes/flexbox-and-grid/">Flexbox and Grid</a></li><li><a href="/introduction-to-html-and-css/notes/responsive-exercise/">Exercise 3: Responsive Web Design</a></li></ul>
-        <a href="/introduction-to-html-and-css/about/">About</a>
+        <ul><li><a href="/introduction-to-html-and-css/">Introduction to HTML and CSS</a><ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li>
+<li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Exercise 1: Writing a Web Page</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">CSS Selectors and Specificity</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-layout/">CSS Layout</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-layout-exercise/">Exercise 2: CSS Layout</a></li>
+<li><a href="/introduction-to-html-and-css/notes/responsive-web/">Responsive Web Design</a></li>
+<li><a href="/introduction-to-html-and-css/notes/flexbox-and-grid/">Flexbox and Grid</a></li>
+<li><a href="/introduction-to-html-and-css/notes/responsive-exercise/">Exercise 3: Responsive Web Design</a></li></ul></li>
+<li><a href="/introduction-to-html-and-css/about/">About</a></li></ul>
     </nav>
 
     <div class="content">
+        
+        <nav class="breadcrumb">
+        <ul><li><a href="/introduction-to-html-and-css/">Introduction to HTML and CSS</a></li></ul>
+        </nav>
+        
         <p>The task in this exercise is to practice using the CSS layout techniques we’ve been looking at for the last few weeks</p>
 <p>You should look at the CSS layouts below and attempt to build each one using as many different layout techniques as possible. You can use floats, flexbox, CSS-Grid, absolute/relative positioning, whatever methods you like. You should try to minimise the amount of CSS code required.</p>
 <ul>
@@ -76,7 +88,7 @@
             async>
             </script>
         </div>
-        
+
     </div>
 </div>
 
@@ -87,6 +99,22 @@ document.querySelectorAll('.answer-block').forEach(d => {
         d.classList.toggle('selected');
     });
 });
+    const urlParams = new URLSearchParams(window.location.search);
+    const embed = urlParams.get('embed');
+    if (embed) {
+        document.querySelectorAll('.comments').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.sidebar').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.breadcrumb').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.nextprev').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+    }
 </script>
     
   </body>

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    
+  
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
 
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Cascading Style Sheets (CSS)">
+<meta property="og:title" content="Cascading Style Sheets (CSS)">
     <meta property="og:site_name" content="Introduction to Programming">
     <meta property="og:locale" content="en_GB">
     <meta property="article:author" content="Martin Chorley">
@@ -45,14 +45,26 @@
 
 <div class="container">
     <nav class="sidebar">
-        <a href='/introduction-to-html-and-css/'>Home</a>
-        <ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Exercise 1: Writing a Web Page</a></li><li><a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">CSS Selectors and Specificity</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout/">CSS Layout</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout-exercise/">Exercise 2: CSS Layout</a></li><li><a href="/introduction-to-html-and-css/notes/responsive-web/">Responsive Web Design</a></li><li><a href="/introduction-to-html-and-css/notes/flexbox-and-grid/">Flexbox and Grid</a></li><li><a href="/introduction-to-html-and-css/notes/responsive-exercise/">Exercise 3: Responsive Web Design</a></li></ul>
-        <a href="/introduction-to-html-and-css/about/">About</a>
+        <ul><li><a href="/introduction-to-html-and-css/">Introduction to HTML and CSS</a><ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li>
+<li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Exercise 1: Writing a Web Page</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">CSS Selectors and Specificity</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-layout/">CSS Layout</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-layout-exercise/">Exercise 2: CSS Layout</a></li>
+<li><a href="/introduction-to-html-and-css/notes/responsive-web/">Responsive Web Design</a></li>
+<li><a href="/introduction-to-html-and-css/notes/flexbox-and-grid/">Flexbox and Grid</a></li>
+<li><a href="/introduction-to-html-and-css/notes/responsive-exercise/">Exercise 3: Responsive Web Design</a></li></ul></li>
+<li><a href="/introduction-to-html-and-css/about/">About</a></li></ul>
     </nav>
 
     <div class="content">
+        
+        <nav class="breadcrumb">
+        <ul><li><a href="/introduction-to-html-and-css/">Introduction to HTML and CSS</a></li></ul>
+        </nav>
+        
         <p>CSS is the language used to format and style HTML documents, it is the language we use to tell a web browser how our elements should be displayed. With it, we can control the visible properties of HTML elements such as their size, position, colour and so on. We can also control how the elements behave in relation to other browser elements, or when conditions in the web browser change.</p>
-<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=6adaaf7e-ed60-44c3-b8c1-adb300d6f24b&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=6adaaf7e-ed60-44c3-b8c1-adb300d6f24b&v=1" width="600" height="320" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 <p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6adaaf7e-ed60-44c3-b8c1-adb300d6f24b" target="blank">link to the full version of the video</a></small></p>
 <p>CSS stands for Cascading Style Sheets. A style sheet, or a collection of CSS used to style a document is made up of a set of CSS rules. Each rule comprises a selector and a set of CSS declarations, held inside a declaration block. Each CSS declaration consists of a CSS property, and the value to be used for that property. Taken together, a CSS rule looks like this:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">selector</span> <span class="token punctuation">{</span><br>    <span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">;</span><br>    <span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
@@ -60,7 +72,12 @@
 <h2>HTML element selector</h2>
 <p>This uses the name (or type) of HTML element to target all elements of that type within a page. So, for example, to target all paragraphs in an HTML document and turn the text blue, we could write a rule like so:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span><br>    <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>Note the American English spelling of the colour property, which is used to set the foreground colour of an HTML element. Most CSS properties use American English spellings.</p>
+<div class="panel panel-[object Object]">
+<div class="panel-header">undefined</div>
+<div class="panel-body">
+Note the American English spelling of the colour property, which is used to set the foreground colour of an HTML element. Most CSS properties use American English spellings.
+</div>
+</div>
 <h2>Class selector</h2>
 <p>This uses the value of an elements class attribute to target all elements with that particular class. It is denoted using a ‘.’. So, for example, to target all the ‘h2’ elements in an HTML document that have a class of ‘red’ and turn their background’s red, we could use a rule like this:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">h2.red</span> <span class="token punctuation">{</span><br>    <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
@@ -98,7 +115,7 @@
             async>
             </script>
         </div>
-        
+
     </div>
 </div>
 
@@ -109,6 +126,22 @@ document.querySelectorAll('.answer-block').forEach(d => {
         d.classList.toggle('selected');
     });
 });
+    const urlParams = new URLSearchParams(window.location.search);
+    const embed = urlParams.get('embed');
+    if (embed) {
+        document.querySelectorAll('.comments').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.sidebar').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.breadcrumb').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.nextprev').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+    }
 </script>
     
   </body>

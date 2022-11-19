@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    
+  
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
 
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Exercise 2: CSS Layout">
+<meta property="og:title" content="Exercise 2: CSS Layout">
     <meta property="og:site_name" content="Introduction to Programming">
     <meta property="og:locale" content="en_GB">
     <meta property="article:author" content="Martin Chorley">
@@ -45,14 +45,31 @@
 
 <div class="container">
     <nav class="sidebar">
-        <a href='/introduction-to-html-and-css/'>Home</a>
-        <ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Exercise 1: Writing a Web Page</a></li><li><a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">CSS Selectors and Specificity</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout/">CSS Layout</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout-exercise/">Exercise 2: CSS Layout</a></li><li><a href="/introduction-to-html-and-css/notes/responsive-web/">Responsive Web Design</a></li><li><a href="/introduction-to-html-and-css/notes/flexbox-and-grid/">Flexbox and Grid</a></li><li><a href="/introduction-to-html-and-css/notes/responsive-exercise/">Exercise 3: Responsive Web Design</a></li></ul>
-        <a href="/introduction-to-html-and-css/about/">About</a>
+        <ul><li><a href="/introduction-to-html-and-css/">Introduction to HTML and CSS</a><ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li>
+<li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Exercise 1: Writing a Web Page</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">CSS Selectors and Specificity</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-layout/">CSS Layout</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-layout-exercise/">Exercise 2: CSS Layout</a></li>
+<li><a href="/introduction-to-html-and-css/notes/responsive-web/">Responsive Web Design</a></li>
+<li><a href="/introduction-to-html-and-css/notes/flexbox-and-grid/">Flexbox and Grid</a></li>
+<li><a href="/introduction-to-html-and-css/notes/responsive-exercise/">Exercise 3: Responsive Web Design</a></li></ul></li>
+<li><a href="/introduction-to-html-and-css/about/">About</a></li></ul>
     </nav>
 
     <div class="content">
+        
+        <nav class="breadcrumb">
+        <ul><li><a href="/introduction-to-html-and-css/">Introduction to HTML and CSS</a></li></ul>
+        </nav>
+        
         <p>The task in this exercise is to produce a website with a fairly complex layout. You should look at a website you visit often, and attempt to recreate that website layout using the HTML and CSS we have looked at to date.</p>
+<div class="panel panel-[object Object]">
+<div class="panel-header">undefined</div>
+<div class="panel-body">
 <p>While working on your website, you should make a note of the things that work, the things that don’t work, what is easy to accomplish, and what has been tricky to do.</p>
+</div>
+</div>
 <h3>Exercise</h3>
 <p>Decide on a webpage that you visit regularly. Your task for today is to try to recreate the layout of this webpage. Note: you do not have to recreate any functionality - this is just about getting a feel for grouping content together and positioning it on the page. You can use real content or fake content (see below) - but if you use real content, please remember to reference the source.</p>
 <p>Remember that you can use the developer tools in the browser to view the source code of the website you are visiting. For many websites, this code will be very complicated, and it may not be easy to understand how this all fits together. A better approach might be to look at the layout of the website you are attempting to recreate and think about how it is structured in terms of boxes of content, and how those boxes can be grouped together into larger boxes. This will allow you to think about how you might structure your HTML so that elements are grouped together inside other elements that can be positioned as a single unit.</p>
@@ -67,7 +84,12 @@
 </li>
 </ul>
 <h3>… Just one more thing</h3>
-<p>Before you finish for the day, take a screenshot (or some screenshots) of your website and email them to <a href="mailto:ChorleyMJ@cardiff.ac.uk">ChorleyMJ@cardiff.ac.uk</a>.</p>
+<div class="panel panel-[object Object]">
+<div class="panel-header">undefined</div>
+<div class="panel-body">
+Before you finish for the day, take a screenshot (or some screenshots) of your website and email them to ChorleyMJ@cardiff.ac.uk.
+</div>
+</div>
 
         <div class="nextprev"><p class="next">Next: <a href="/introduction-to-html-and-css/notes/responsive-web/">Responsive Web Design</a></p><p class="previous">Previous: <a href="/introduction-to-html-and-css/notes/css-layout/">CSS Layout</a></p>
         </div>
@@ -80,7 +102,7 @@
             async>
             </script>
         </div>
-        
+
     </div>
 </div>
 
@@ -91,6 +113,22 @@ document.querySelectorAll('.answer-block').forEach(d => {
         d.classList.toggle('selected');
     });
 });
+    const urlParams = new URLSearchParams(window.location.search);
+    const embed = urlParams.get('embed');
+    if (embed) {
+        document.querySelectorAll('.comments').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.sidebar').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.breadcrumb').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.nextprev').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+    }
 </script>
     
   </body>

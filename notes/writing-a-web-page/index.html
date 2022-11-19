@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    
+  
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
 
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Exercise 1: Writing a Web Page">
+<meta property="og:title" content="Exercise 1: Writing a Web Page">
     <meta property="og:site_name" content="Introduction to Programming">
     <meta property="og:locale" content="en_GB">
     <meta property="article:author" content="Martin Chorley">
@@ -45,13 +45,25 @@
 
 <div class="container">
     <nav class="sidebar">
-        <a href='/introduction-to-html-and-css/'>Home</a>
-        <ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li><li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li><li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Exercise 1: Writing a Web Page</a></li><li><a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">CSS Selectors and Specificity</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout/">CSS Layout</a></li><li><a href="/introduction-to-html-and-css/notes/css-layout-exercise/">Exercise 2: CSS Layout</a></li><li><a href="/introduction-to-html-and-css/notes/responsive-web/">Responsive Web Design</a></li><li><a href="/introduction-to-html-and-css/notes/flexbox-and-grid/">Flexbox and Grid</a></li><li><a href="/introduction-to-html-and-css/notes/responsive-exercise/">Exercise 3: Responsive Web Design</a></li></ul>
-        <a href="/introduction-to-html-and-css/about/">About</a>
+        <ul><li><a href="/introduction-to-html-and-css/">Introduction to HTML and CSS</a><ul><li><a href="/introduction-to-html-and-css/notes/html/">Hypertext Markup Language (HTML)</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css/">Cascading Style Sheets (CSS)</a></li>
+<li><a href="/introduction-to-html-and-css/notes/writing-a-web-page/">Exercise 1: Writing a Web Page</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-selectors-specificity/">CSS Selectors and Specificity</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-layout/">CSS Layout</a></li>
+<li><a href="/introduction-to-html-and-css/notes/css-layout-exercise/">Exercise 2: CSS Layout</a></li>
+<li><a href="/introduction-to-html-and-css/notes/responsive-web/">Responsive Web Design</a></li>
+<li><a href="/introduction-to-html-and-css/notes/flexbox-and-grid/">Flexbox and Grid</a></li>
+<li><a href="/introduction-to-html-and-css/notes/responsive-exercise/">Exercise 3: Responsive Web Design</a></li></ul></li>
+<li><a href="/introduction-to-html-and-css/about/">About</a></li></ul>
     </nav>
 
     <div class="content">
-        <iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=0deb7203-20c4-4714-8d92-adb300d6f2cc&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+        
+        <nav class="breadcrumb">
+        <ul><li><a href="/introduction-to-html-and-css/">Introduction to HTML and CSS</a></li></ul>
+        </nav>
+        
+        <iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=0deb7203-20c4-4714-8d92-adb300d6f2cc&v=1" width="600" height="320" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 <p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=0deb7203-20c4-4714-8d92-adb300d6f2cc" target="blank">link to the full version of the video</a></small></p>
 <p>During this activity for this topic we will put what we have learnt into practice by creating a simple HTML web page.</p>
 <p>For this exercise we’ll need a few different applications open. You should search for and open all these applications before we start:</p>
@@ -102,7 +114,7 @@ Why do we use the name <code>index.html</code> for the web page?
 <p>If you don’t already have one open, open a command line and navigate to the folder where our lab code is stored:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> intro-html-css</code></pre>
 <p>We can use a built-in feature of the Python programming language to run a simple web server. Assuming you have Python installed, you can type:</p>
-<pre class="language-bash"><code class="language-bash">python3 -m http.server</code></pre>
+<pre class="language-bash"><code class="language-bash">python3 <span class="token parameter variable">-m</span> http.server</code></pre>
 <p>This will start a web server in the current directory, which will sit and wait for requests from a web browser:</p>
 <pre><code>Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 </code></pre>
@@ -179,7 +191,7 @@ If you're not sure how to take a screenshot, why not post a question (or look fo
             async>
             </script>
         </div>
-        
+
     </div>
 </div>
 
@@ -190,6 +202,22 @@ document.querySelectorAll('.answer-block').forEach(d => {
         d.classList.toggle('selected');
     });
 });
+    const urlParams = new URLSearchParams(window.location.search);
+    const embed = urlParams.get('embed');
+    if (embed) {
+        document.querySelectorAll('.comments').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.sidebar').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.breadcrumb').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.nextprev').forEach(d => {
+            d.classList.toggle('hidden');
+        });
+    }
 </script>
     
   </body>
