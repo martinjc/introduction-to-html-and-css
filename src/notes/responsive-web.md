@@ -12,9 +12,9 @@ eleventyComputed:
 
 Now we can annotate our content and documents so a web browser can understand their structure, and can visually style that content and lay it out on a page, we will start to think about how our users access this content and what that means for our webpage design. We'll look at some of the simpler tools at our disposal to help us build pages that are accessible no matter what type of device our users are using.
 
-{% panopto "5fd6d795-d547-4ace-b149-adb300d6f865" %}
+{% panopto "74513bd4-083a-4876-be5e-af0e00dd2f9e" %}
 
-{% panopto "e194c74f-a683-404d-8333-adb300d6f623" %}
+{% panopto "841646dd-dcdc-4016-a152-af0e00dd2ff4" %}
 
 ## Required Reading
 

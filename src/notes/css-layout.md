@@ -17,9 +17,9 @@ The reading for this topic will begin to show you how to combine the structure o
 -   [Learn to Code HTML + CSS](https://learn.shayhowe.com/html-css/) - this is a great introduction to combining HTML and CSS to create styled web pages. It is fairly in depth, and some of it will not be needed at this point, but you should be comfortable with all of this within the first few weeks of the course.
 -   [Learn CSS layout](http://learnlayout.com/) - this is a solid introduction to some basic CSS layout techniques. Later on we'll look at more advanced techniques, but the basic techniques covered in this tutorial will be fine for now.
 
-{% panopto "1bbb5df4-3165-4c22-bbca-adb300d6f4f0" %}
+{% panopto "7076b22b-e189-4309-a86a-af0e00dd3195" %}
 
-{% panopto "f6da4ac9-c476-4eea-9c79-adb300d6f56e" %}
+{% panopto "c297b1c8-e6fb-47d4-bb71-af0e00dd302c" %}
 
 ### Optional Further Reading
 

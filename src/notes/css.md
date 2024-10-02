@@ -12,7 +12,7 @@ eleventyComputed:
 
 CSS is the language used to format and style HTML documents, it is the language we use to tell a web browser how our elements should be displayed. With it, we can control the visible properties of HTML elements such as their size, position, colour and so on. We can also control how the elements behave in relation to other browser elements, or when conditions in the web browser change.
 
-{% panopto "6adaaf7e-ed60-44c3-b8c1-adb300d6f24b" %}
+{% panopto "727c9358-5b66-46d4-be93-af0e00dd2e24" %}
 
 CSS stands for Cascading Style Sheets. A style sheet, or a collection of CSS used to style a document is made up of a set of CSS rules. Each rule comprises a selector and a set of CSS declarations, held inside a declaration block. Each CSS declaration consists of a CSS property, and the value to be used for that property. Taken together, a CSS rule looks like this:
 

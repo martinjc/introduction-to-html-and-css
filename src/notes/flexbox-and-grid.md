@@ -18,7 +18,7 @@ Now we're ready to move on from the relatively simple CSS layout methods we've l
 
 -   [A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - A complete guide to FlexBox
 
-{% panopto "099ce3c5-83e4-4dab-a7b4-adb300d6f6a4" %}
+{% panopto "e9ea8e11-8370-4459-9f6e-af0e00dd30c8" %}
 
 ## CSS Grid
 
@@ -26,7 +26,7 @@ Now we're ready to move on from the relatively simple CSS layout methods we've l
 
 -   [A complete guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - A complete guide to CSS Grid
 
-{% panopto "34baaa7a-d17f-408f-94a4-adb300d6f741" %}
+{% panopto "a6518dfe-e4c3-4e2b-8442-af0e00dd3092" %}
 
 ## Related Reading
 
@@ -36,7 +36,7 @@ Now we're ready to move on from the relatively simple CSS layout methods we've l
 
 ## Code Examples
 
-{% panopto "770829f2-5c0b-4ef2-9b8b-adb300d6f8ea" %}
+{% panopto "a2991907-82f3-4d70-81b6-af0e00dd315a" %}
 Please note: there's a better way to fix the grid layout at the end of this video - rather than tell the `nav` and the `aside` that they need to be in the first row, we could set the `grid-auto-flow` of the parent container to be `row-dense` and that would make the browser fill the earlier gaps in the existing row rather than add a new row.
 
 There are a set of code examples that accompany this course showing the use of the fundamental HTML tags and CSS styles/rules that we look at. (Right click and open in a new window/tab) if you're viewing this on Learning Central.

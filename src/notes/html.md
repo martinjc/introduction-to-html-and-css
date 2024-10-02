@@ -12,7 +12,8 @@ eleventyComputed:
 
 HTML stands for HyperText Markup Language. In the simplest terms, it’s the language we use to build webpages. It is not really a ‘programming’ language, in that it is not a set of code that instructs the computer to carry out any particular operations. Rather as the name suggests it is a ‘markup’ language, a set of code that adds additional information to data. If we take some content that we’d like to put on the web, anything, from simple pieces of text, graphics and images, lists and tables, all the way through to complex interactive content, HTML is the language we use to explain to our Web browser what that content is. The web browser can look at our HTML, which describes our content, and then understand the structure of our content and how it should be displayed on the screen. This browser process, of taking our content, examining it to come up with a ‘model’ of what the content is, and then displaying it on the screen is known as ‘rendering’.
 
-{% panopto "c9dea73a-93bd-4b78-a3cc-adb300d6efa6" %}
+
+{% panopto "5a60096d-5f28-446b-9e42-af0e00dd2cb3" %}
 
 ## Markup
 
@@ -33,7 +34,7 @@ Each attribute inside an HTML element consists of multiple parts - the ‘name�
 
 ## Documents
 
-{% panopto "fa69f177-7cc3-4fdb-954e-adb300d6f0e0" %}
+{% panopto "c97518a1-3626-4faf-8e64-af0e00dd2d6e" %}
 
 This is a very basic ‘minimal’ HTML document:
 
@@ -115,7 +116,7 @@ Because we opened the strong tag after we opened the paragraph tag, we must clos
 
 ## HTMl tags
 
-{% panopto "d717f823-4e73-40ac-894a-adb300d6f035" %}
+{% panopto "56426dc8-3ac3-4eda-a32c-af0e00dd2ce0" %}
 
 We have already seen that to display content on a webpage, we need to tell the browser what sort of content we have. We have also seen that we use HTML tags to 'annotate' or mark up our content. There are lots of different HTML tags that we can use to annotate our content. We’ll look at a few more here, but for a more comprehensive list of HTML tags, and guidance on how to use them, we recommend you look at the MDN HTML documentation online.
 
@@ -182,7 +183,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML
 
 ## Block and Inline
 
-{% panopto "25369415-baed-40e6-989f-adb300d6f194" %}
+{% panopto "c2e1ef5b-fa6d-4a71-85e5-af0e00dd2d99" %}
 
 Some elements are 'block' elements. These will be displayed starting on a new line, by default they expand to take up all the width that they can, and they can contain both block and inline elements.
 

@@ -10,7 +10,7 @@ eleventyComputed:
     order: "{{ order }}"
 ---
 
-{% panopto "2996132b-cd1f-4356-98fa-adb300d6f3ae" %}
+{% panopto "f48e34f2-f645-42ea-9112-af0e00dd2ec0" %}
 
 We've seen that we use HTML to markup content, to give that content structure and meaning, and that we use CSS to style and present the content.
 
@@ -77,7 +77,7 @@ The values are added together, and the rule with the highest specifity is the on
 
 ## CSS Selectors and Specificity Demo
 
-{% panopto "f10c54ca-4d70-45a2-a118-adb300d6f464" %}
+{% panopto "cc9d9412-6813-4971-ad8e-af0e00dd2e51" %}
 
 ## Code Examples
 
